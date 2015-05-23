@@ -740,3 +740,23 @@ Caused by: java.io.IOException: Δεν ήταν δυνατή η πρόσβαση
 	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:101)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:188)
 	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-05-24 00:42:06.410
+!MESSAGE Exception caught during execution of add command
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:212)
+	at org.eclipse.egit.core.op.CommitOperation.addUntracked(CommitOperation.java:222)
+	at org.eclipse.egit.core.op.CommitOperation.access$4(CommitOperation.java:210)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:96)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.LockFailedException: Cannot lock C:\Users\Kostas\Workspace\gitHub\hua_hospitalServices\.git\index
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:224)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:301)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:267)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1053)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:142)
+	... 7 more
