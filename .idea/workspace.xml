@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py" />
-    </list>
+    <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="" />
     <ignored path="hua_hospitalServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
