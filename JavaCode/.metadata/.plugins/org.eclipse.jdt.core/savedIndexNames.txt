@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.jdt.core
+1939943730.index

@@ -2,3 +2,6 @@ http://stackoverflow.com/questions/25537905/django-1-7-throws-django-core-except
 
 ΤΕΛΙΚΑ εγκατέστησα το 
 https://django-registration-redux.readthedocs.org/en/latest/quickstart.html
+
+
+https://www.youtube.com/watch?v=CFypO_LNmcc
