@@ -30,6 +30,7 @@ public class PatientMethods extends BaseWebMethods {
 			preparedStmnt.setString(7, patient.getBloodType());
 			preparedStmnt.setString(8, patient.getAddress());
 			preparedStmnt.setString(9, patient.getCountry());
+			preparedStmnt.setString(10, patient.getEmail());
 
 			db.Update(preparedStmnt); // commit
 
@@ -94,15 +95,15 @@ public class PatientMethods extends BaseWebMethods {
 	}
 
 	@WebMethod
-	public Patient returnPatientByStaffId(int patientID) {
+	public Patient returnPatientByAMKA(int AMKA) {
 		PreparedStatement preparedStmnt = null;
 		try {
 
-			String SQLStr = "SELECT * FROM `itp14105`.`patient` where staffID = ?;";
+			String SQLStr = "SELECT * FROM `itp14105`.`patient` where AMKA = ?;";
 
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 
-			preparedStmnt.setInt(1, patientID);
+			preparedStmnt.setInt(1, AMKA);
 			// Excecute the query
 			ResultSet rs = db.Query(preparedStmnt);
 			// we get only one

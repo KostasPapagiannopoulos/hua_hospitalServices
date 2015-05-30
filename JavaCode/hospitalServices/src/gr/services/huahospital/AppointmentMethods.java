@@ -23,91 +23,168 @@ public class AppointmentMethods extends BaseWebMethods {
 			preparedStmnt.setInt(1, appointment.getAppointmentID());
 			preparedStmnt.setString(2, appointment.getPatientName());
 			preparedStmnt.setString(3, appointment.getPatientSurname());
-			preparedStmnt.setInt(6, appointment.getAMKA());
-			preparedStmnt.setString(3, appointment.getInsuranceFund());
-			preparedStmnt.setString(3, appointment.getInfirmary());
-			preparedStmnt.setString(3, appointment.getDiseaseDetails());
-			preparedStmnt.setDate(5, new java.sql.Date(appointment
-					.getAppointmentDate().getTime()));
-			// preparedStmnt.setInt(6, appointment.getStaffType());
-			// preparedStmnt.setString(7, appointment.getEmp_no());
+			preparedStmnt.setInt(4, appointment.getAMKA());
+			preparedStmnt.setString(5, appointment.getInsuranceFund());
+			//preparedStmnt.setString(6, appointment.getInfirmary());
+			preparedStmnt.setString(6, appointment.getDiseaseDetails());
+			//preparedStmnt.setDate(8, new java.sql.Date(appointment.getAppointmentDate().getTime()));
+			//preparedStmnt.setString(9, appointment.getAppointmentTime());
+			preparedStmnt.setInt(7, appointment.getAppointmentEmergency());
+			//preparedStmnt.setString(11, appointment.getRejectReasons());
+			preparedStmnt.setInt(8, 1);
+
 
 			db.Update(preparedStmnt); // commit
 
 			return "Το ραντεβού σας καταχωρήθηκε επιτυχώς!";
-		} catch (SQLException e) {
-
+		} 
+		catch (SQLException e) 
+		{
 			e.printStackTrace();
 
-		} catch (InstantiationException e) {
+		} 
+		catch (InstantiationException e) 
+		{
+
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IllegalAccessException e) {
+		} 
+		catch (IllegalAccessException e) 
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
+		} 
+		catch (ClassNotFoundException e)
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "Error";
+		return "Σφάλμα στη καταχώριση του ραντεβού!";
 	}
 
 	@WebMethod
-	public ArrayList<HospitalStaff> returnAllStaff() {
+
+	public String HeadUpdatesAppointment(Appointment appointment) 
+	{
 		try {
-			ArrayList<HospitalStaff> arrList = new ArrayList<HospitalStaff>();
 
-			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
-			ResultSet rs = db.Query(SQLStr);
-			while (rs.next()) {
-				HospitalStaff staffInstance = new HospitalStaff();
-				staffInstance.setStaffID(rs.getInt("staffID"));
-				staffInstance.setFirstName(rs.getString("firstName"));
-				staffInstance.setLastSurname(rs.getString("lastName"));
-				staffInstance.setGender(rs.getString("gender").charAt(0));
-				staffInstance.setBirthDate(rs.getDate("birthDate"));
-				staffInstance.setStaffType(rs.getInt("staffType"));
-				staffInstance.setEmp_no(rs.getString("emp_no"));
-
-				arrList.add(staffInstance);
+				String SQLStr = "UPDATE `itp14105`.`appointment` "
+						+ "SET infirmary=?, appointmentDate=?, appointmentTime=?, appointmentState=?);";
+				PreparedStatement preparedStmnt = db.getConn().prepareStatement(SQLStr);
+				
+				preparedStmnt.setString(1, appointment.getInfirmary());
+				preparedStmnt.setDate(2, appointment.getAppointmentDate());
+				preparedStmnt.setTime(3, appointment.getAppointmentTime());
+				preparedStmnt.setInt(4, 2);
+				
+				db.Update(preparedStmnt); //commit
+				return "Το ραντεβού σας ενημερώθηκε επιτυχώς!";
 			}
-			return arrList;
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return new ArrayList<HospitalStaff>();
-		}
+			catch (SQLException e) 
+			{
+				e.printStackTrace();
+			} 
+			catch (InstantiationException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (IllegalAccessException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (ClassNotFoundException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return "Σφάλμα στην ενημέρωση του ραντεβού!";
+		
+	}
+	
+	@WebMethod
+	public String staffUpdatesAppointment(Appointment appointment) 
+	{
+		try {
+
+				String SQLStr = "UPDATE `itp14105`.`appointment` "
+						+ "SET infirmary=?, appointmentDate=?, appointmentTime=?, appointmentState=?);";
+				PreparedStatement preparedStmnt = db.getConn().prepareStatement(SQLStr);
+				
+				preparedStmnt.setString(1, appointment.getInfirmary());
+				preparedStmnt.setDate(2, appointment.getAppointmentDate());
+				preparedStmnt.setTime(3, appointment.getAppointmentTime());
+				preparedStmnt.setInt(4, 2);
+				
+				db.Update(preparedStmnt); //commit
+				return "Το ραντεβού σας ενημερώθηκε επιτυχώς!";
+			}
+			catch (SQLException e) 
+			{
+				e.printStackTrace();
+			} 
+			catch (InstantiationException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (IllegalAccessException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (ClassNotFoundException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return "Σφάλμα στην ενημέρωση του ραντεβού!";
+		
 	}
 
 	@WebMethod
-	public HospitalStaff returnStaffByStaffId(int staffID) {
-		PreparedStatement preparedStmnt = null;
-		try {
+	public Appointment returnAppointmentByAMKA(int AMKA) 
+	{
 
-			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff` where staffID = ?;";
+		PreparedStatement preparedStmnt = null;
+		try 
+		{
+			String SQLStr = "SELECT * FROM `itp14105`.`appointment` where AMKA = ?;";
 
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 
-			preparedStmnt.setInt(1, staffID);
+			preparedStmnt.setInt(1, AMKA);
 			// Excecute the query
 			ResultSet rs = db.Query(preparedStmnt);
 			// we get only one
-			if (rs.next()) {
-				HospitalStaff staffInstance = new HospitalStaff();
-				staffInstance.setStaffID(rs.getInt("staffID"));
-				staffInstance.setFirstName(rs.getString("firstName"));
-				staffInstance.setLastSurname(rs.getString("lastName"));
-				staffInstance.setGender(rs.getString("gender").charAt(0));
-				staffInstance.setBirthDate(rs.getDate("birthDate"));
-				staffInstance.setStaffType(rs.getInt("staffType"));
-				staffInstance.setEmp_no(rs.getString("emp_no"));
 
-				return staffInstance;
+			if (rs.next()) 
+			{
+				Appointment appointmentInstance = new Appointment();
+				appointmentInstance.setAppointmentID(rs.getInt("appointmentID"));
+				appointmentInstance.setPatientName(rs.getString("patientName"));
+				appointmentInstance.setPatientSurname(rs.getString("patientSurname"));
+				appointmentInstance.setAMKA(rs.getInt("AMKA"));
+				appointmentInstance.setInsuranceFund(rs.getString("insuranceFund"));
+				appointmentInstance.setInfirmary(rs.getString("infirmary"));
+				appointmentInstance.setDiseaseDetails(rs.getString("diseaseDetails"));
+				appointmentInstance.setAppointmentDate(rs.getDate("appointmentDate"));
+				appointmentInstance.setAppointmentTime(rs.getTime("appointmentTime"));
+				appointmentInstance.setAppointmentEmergency(rs.getInt("appointmentEmergency"));
+				appointmentInstance.setRejectReasons(rs.getString("rejectReasons"));
+				appointmentInstance.setAppointmentState(rs.getInt("appointmentState"));
+
+				return appointmentInstance;
 			}
 
-		} catch (Exception e) {
-
+		} 
+		catch (Exception e) 
+		{
 			e.printStackTrace();
-		} finally {
+
+		} 
+		 finally {
 			try {
 				if (preparedStmnt != null) {
 					preparedStmnt.close();
@@ -120,5 +197,40 @@ public class AppointmentMethods extends BaseWebMethods {
 		// we didnt find anyone with this Staff id
 		return null;
 
+	}
+
+	@WebMethod
+	public ArrayList<Appointment> returnAllAppointments() 
+	{
+		try {
+				ArrayList<Appointment> arrList = new ArrayList<Appointment>();
+	
+				String SQLStr = "SELECT * FROM `itp14105`.`appointment`;";
+				ResultSet rs = db.Query(SQLStr);
+				while (rs.next()) 
+				{
+					Appointment appointmentInstance = new Appointment();
+					appointmentInstance.setAppointmentID(rs.getInt("appointmentID"));
+					appointmentInstance.setPatientName(rs.getString("patientName"));
+					appointmentInstance.setPatientSurname(rs.getString("patientSurname"));
+					appointmentInstance.setAMKA(rs.getInt("AMKA"));
+					appointmentInstance.setInsuranceFund(rs.getString("insuranceFund"));
+					appointmentInstance.setInfirmary(rs.getString("infirmary"));
+					appointmentInstance.setDiseaseDetails(rs.getString("diseaseDetails"));
+					appointmentInstance.setAppointmentDate(rs.getDate("appointmentDate"));
+					appointmentInstance.setAppointmentTime(rs.getTime("appointmentTime"));
+					appointmentInstance.setAppointmentEmergency(rs.getInt("appointmentEmergency"));
+					appointmentInstance.setRejectReasons(rs.getString("rejectReasons"));
+					appointmentInstance.setAppointmentState(rs.getInt("appointmentState"));
+	
+					arrList.add(appointmentInstance);
+				}
+				return arrList;
+			} 
+			catch (SQLException e) 
+			{
+				e.printStackTrace();
+				return new ArrayList<Appointment>();
+			}
 	}
 }

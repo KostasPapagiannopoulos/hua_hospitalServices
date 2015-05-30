@@ -11,6 +11,7 @@ public class Patient
 	private String bloodType;
 	private String address;
 	private String country;
+	private String email;
 
 	public Patient() 
 	{
@@ -106,6 +107,18 @@ public class Patient
 	public void setCountry(String country) 
 	{
 		this.country = country;
+	}
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 }

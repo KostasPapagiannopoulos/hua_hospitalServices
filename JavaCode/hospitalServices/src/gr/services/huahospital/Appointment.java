@@ -1,6 +1,7 @@
 package gr.services.huahospital;
 
-import java.util.Date;
+import java.sql.Time;
+import java.sql.Date;
 
 public class Appointment 
 {
@@ -12,10 +13,10 @@ public class Appointment
 	private String infirmary;
 	private String diseaseDetails;
 	private Date appointmentDate;
-	private String appointmentTime;
+	private Time appointmentTime;
 	private int appointmentEmergency;
 	private String rejectReasons;
-	private String appointmentAccelerate;
+	private int appointmentState;
 	
 	public Appointment() 
 	{
@@ -101,12 +102,12 @@ public class Appointment
 		this.appointmentDate = appointmentDate;
 	}
 
-	public String getAppointmentTime() 
+	public Time getAppointmentTime() 
 	{
 		return appointmentTime;
 	}
 
-	public void setAppointmentTime(String appointmentTime) 
+	public void setAppointmentTime(Time appointmentTime) 
 	{
 		this.appointmentTime = appointmentTime;
 	}
@@ -131,13 +132,13 @@ public class Appointment
 		this.rejectReasons = rejectReasons;
 	}
 
-	public String getAppointmentAccelerate() 
+	public int getAppointmentState() 
 	{
-		return appointmentAccelerate;
+		return appointmentState;
 	}
 
-	public void setAppointmentAccelerate(String appointmentAccelerate) 
+	public void setAppointmentState(int appointmentState) 
 	{
-		this.appointmentAccelerate = appointmentAccelerate;
+		this.appointmentState = appointmentState;
 	}
 }
