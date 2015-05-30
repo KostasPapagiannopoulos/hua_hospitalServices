@@ -24,17 +24,22 @@ public class HospitalStaffMethods
 	{
 		try {
 
-			String SQLStr = "INSERT INTO `itp14105`.`hospitalstaff` "
-					+ "VALUES (?, ?, ?, ?,  ?, ?, ?);";
+			String SQLStr = ""
+					+ ""
+					+ "INSERT INTO `itp14105`.`hospitalstaff` "
+					+ "(firstName,lastName,gender,birthDate,staffType,emp_no)"
+					+ ""
+					+ ""
+					+ "VALUES ( ?, ?, ?,  ?, ?, ?);";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(SQLStr);
 
-			preparedStmnt.setInt(1, hospitalStaff.getStaffID());
-			preparedStmnt.setString(2, hospitalStaff.getFirstName());
-			preparedStmnt.setString(3, hospitalStaff.getLastSurname());
-			preparedStmnt.setString(4, Character.toString(hospitalStaff.getGender()));
-			preparedStmnt.setDate(5, new java.sql.Date(hospitalStaff.getBirthDate().getTime()));
-			preparedStmnt.setInt(6, hospitalStaff.getStaffType());
-			preparedStmnt.setString(7, hospitalStaff.getEmp_no());
+			
+			preparedStmnt.setString(1, hospitalStaff.getFirstName());
+			preparedStmnt.setString(2, hospitalStaff.getLastSurname());
+			preparedStmnt.setString(3, Character.toString(hospitalStaff.getGender()));
+			preparedStmnt.setDate(4, new java.sql.Date(hospitalStaff.getBirthDate().getTime()));
+			preparedStmnt.setInt(5, hospitalStaff.getStaffType());
+			preparedStmnt.setString(6, hospitalStaff.getEmp_no());
 
 			db.Update(preparedStmnt); //commit
 
@@ -148,4 +153,6 @@ public class HospitalStaffMethods
 		return null;
 
 	}	
+	
+	
 }

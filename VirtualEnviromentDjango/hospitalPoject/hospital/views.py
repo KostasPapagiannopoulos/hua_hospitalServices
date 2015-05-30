@@ -29,7 +29,7 @@ def showusers(request):
 
 def userExists(emp_no):
     # Get the data from the endpoint
-    request = urllib2.Request("http://62.217.127.56/phprest/index.php/users/users")
+    request = urllib2.Request("http://62.217.127.56/phprest/users/employees")
     username = 'admin'
     password = '1234'
     base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
@@ -81,8 +81,9 @@ def register_user(request):
                 return HttpResponseRedirect('/accounts/register_failed')
 
             # else save him
-            java_insertStaff(form.cleaned_data['username'])
-            form.save()
+            response =  java_insertStaff(form.cleaned_data['username'])
+            if (response):
+                form.save()
             return HttpResponseRedirect('/accounts/register_success')
 
     else:
@@ -95,11 +96,11 @@ def register_user(request):
     return render_to_response('register.html', args)
 
 
-java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientService?WSDL')
+java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
 
 
 def java_insertUser(patientName):
-    java_Patient_Clinet.service.setPatientID(1)
+    java_Patient_Clinet.service.setPatientID(2)
     java_Patient_Clinet.service.setPatientName(patientName)
     java_Patient_Clinet.service.setPatientSurname("patientSurname")
     java_Patient_Clinet.service.setPatientGender("patientGender")
@@ -112,13 +113,13 @@ def java_insertUser(patientName):
     return HttpResponse("Rango says Rango")
 
 
-java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffService?WSDL')
+java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffMethodsService?WSDL')
 
 
 def java_insertStaff(username):
     print java_Staff_Client
     hospitalstaff = java_Staff_Client.factory.create('hospitalStaff')
-    hospitalstaff.staffID = 100
+    #hospitalstaff.staffID = 101
     hospitalstaff.firstName = 'name_of_' + username
     hospitalstaff.lastSurname = 'surname_of_' + username
     hospitalstaff.gender = 'M'
@@ -126,8 +127,8 @@ def java_insertStaff(username):
     hospitalstaff.staffType = 1
     hospitalstaff.emp_no = username
 
-    response = java_Staff_Client.service.insertStaff(hospitalstaff)
-    return HttpResponse("Rango says " + response)
+    return java_Staff_Client.service.insertStaff(hospitalstaff)
+
 
 
 def register_success(request):
