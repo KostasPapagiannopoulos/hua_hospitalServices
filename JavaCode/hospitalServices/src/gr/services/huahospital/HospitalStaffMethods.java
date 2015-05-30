@@ -9,15 +9,9 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService
-public class HospitalStaffMethods 
+public class HospitalStaffMethods  extends BaseWebMethods
 {
 	
-	Database db = new Database();
-
-	public Database getDb() 
-	{
-		return db;
-	}
 	
 	@WebMethod
 	public String insertStaff(HospitalStaff hospitalStaff) 
@@ -120,19 +114,11 @@ public class HospitalStaffMethods
 				return staffInstance;
 			}
 
-		} catch (SQLException e) {
+		} catch (Exception e) {
 
 			e.printStackTrace();
 
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	
 		}
 		finally
 		{

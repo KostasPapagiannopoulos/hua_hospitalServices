@@ -28,19 +28,17 @@ public class Database {
 		return conn;
 	}
 
-	public int Update(PreparedStatement statement) //query, no response
+	public int Update(PreparedStatement statement) throws SQLException //query, no response
 	{
 		try 
 		{
 			return statement.executeUpdate();
 		} 
-		catch (SQLException sqlEx) 
-		{
-			sqlEx.printStackTrace();
-		} 
+	
 		catch (Exception ex) 
 		{
 			ex.printStackTrace();
+			throw ex;
 		} 
 		finally 
 		{
@@ -53,24 +51,21 @@ public class Database {
 			catch (final SQLException sqlEx) 
 			{
 				sqlEx.printStackTrace();
+				throw sqlEx;
 			}
 		}
-		return -1;
 	}
 
-	public ResultSet Query(PreparedStatement statement) //query+attributes
+	public ResultSet Query(PreparedStatement statement) throws Exception //query+attributes
 	{
 		try 
 		{
 			return statement.executeQuery();
-		} 
-		catch (SQLException sqlEx) 
-		{
-			sqlEx.printStackTrace();
-		} 
+		} 		
 		catch (Exception ex) 
 		{
 			ex.printStackTrace();
+			throw ex;
 		} 
 		/*finally 
 		{
@@ -86,7 +81,7 @@ public class Database {
 				sqlEx.printStackTrace();
 			}
 		}*/
-		return null;
+	
 	}
 
 	public ResultSet Query(String query) //simpleUse 
@@ -115,6 +110,7 @@ public class Database {
 		catch (Exception ex) 
 		{
 			ex.printStackTrace();
+			throw ex;
 		} 
 		finally 
 		{

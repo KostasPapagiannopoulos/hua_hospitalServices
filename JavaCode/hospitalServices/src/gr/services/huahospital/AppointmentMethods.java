@@ -9,24 +9,16 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService
-public class AppointmentMethods 
-{
-	
-	Database db = new Database();
+public class AppointmentMethods extends BaseWebMethods {
 
-	public Database getDb() 
-	{
-		return db;
-	}
-	
 	@WebMethod
-	public String insertAppointment(Appointment appointment) 
-	{
+	public String insertAppointment(Appointment appointment) {
 		try {
 
 			String SQLStr = "INSERT INTO `itp14105`.`appointment` "
 					+ "VALUES (?, ?, ?, ?,  ?, ?, ?);";
-			PreparedStatement preparedStmnt = db.getConn().prepareStatement(SQLStr);
+			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
+					SQLStr);
 
 			preparedStmnt.setInt(1, appointment.getAppointmentID());
 			preparedStmnt.setString(2, appointment.getPatientName());
@@ -35,17 +27,18 @@ public class AppointmentMethods
 			preparedStmnt.setString(3, appointment.getInsuranceFund());
 			preparedStmnt.setString(3, appointment.getInfirmary());
 			preparedStmnt.setString(3, appointment.getDiseaseDetails());
-			preparedStmnt.setDate(5, new java.sql.Date(appointment.getAppointmentDate().getTime()));
-			//preparedStmnt.setInt(6, appointment.getStaffType());
-			//preparedStmnt.setString(7, appointment.getEmp_no());
+			preparedStmnt.setDate(5, new java.sql.Date(appointment
+					.getAppointmentDate().getTime()));
+			// preparedStmnt.setInt(6, appointment.getStaffType());
+			// preparedStmnt.setString(7, appointment.getEmp_no());
 
-			db.Update(preparedStmnt); //commit
+			db.Update(preparedStmnt); // commit
 
 			return "Το ραντεβού σας καταχωρήθηκε επιτυχώς!";
 		} catch (SQLException e) {
 
 			e.printStackTrace();
-			
+
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,40 +51,35 @@ public class AppointmentMethods
 		}
 		return "Error";
 	}
-	
+
 	@WebMethod
-	public ArrayList<HospitalStaff> returnAllStaff() 
-	{
+	public ArrayList<HospitalStaff> returnAllStaff() {
 		try {
-				ArrayList<HospitalStaff> arrList = new ArrayList<HospitalStaff>();
-	
-				String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
-				ResultSet rs = db.Query(SQLStr);
-				while (rs.next()) 
-				{
-					HospitalStaff staffInstance = new HospitalStaff();
-					staffInstance.setStaffID(rs.getInt("staffID"));
-					staffInstance.setFirstName(rs.getString("firstName"));
-					staffInstance.setLastSurname(rs.getString("lastName"));
-					staffInstance.setGender(rs.getString("gender").charAt(0));
-					staffInstance.setBirthDate(rs.getDate("birthDate"));
-					staffInstance.setStaffType(rs.getInt("staffType"));
-					staffInstance.setEmp_no(rs.getString("emp_no"));
-	
-					arrList.add(staffInstance);
-				}
-				return arrList;
-			} 
-			catch (SQLException e) 
-			{
-				e.printStackTrace();
-				return new ArrayList<HospitalStaff>();
+			ArrayList<HospitalStaff> arrList = new ArrayList<HospitalStaff>();
+
+			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
+			ResultSet rs = db.Query(SQLStr);
+			while (rs.next()) {
+				HospitalStaff staffInstance = new HospitalStaff();
+				staffInstance.setStaffID(rs.getInt("staffID"));
+				staffInstance.setFirstName(rs.getString("firstName"));
+				staffInstance.setLastSurname(rs.getString("lastName"));
+				staffInstance.setGender(rs.getString("gender").charAt(0));
+				staffInstance.setBirthDate(rs.getDate("birthDate"));
+				staffInstance.setStaffType(rs.getInt("staffType"));
+				staffInstance.setEmp_no(rs.getString("emp_no"));
+
+				arrList.add(staffInstance);
 			}
+			return arrList;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return new ArrayList<HospitalStaff>();
+		}
 	}
 
 	@WebMethod
-	public HospitalStaff returnStaffByStaffId(int staffID) 
-	{
+	public HospitalStaff returnStaffByStaffId(int staffID) {
 		PreparedStatement preparedStmnt = null;
 		try {
 
@@ -103,8 +91,7 @@ public class AppointmentMethods
 			// Excecute the query
 			ResultSet rs = db.Query(preparedStmnt);
 			// we get only one
-			if (rs.next()) 
-			{
+			if (rs.next()) {
 				HospitalStaff staffInstance = new HospitalStaff();
 				staffInstance.setStaffID(rs.getInt("staffID"));
 				staffInstance.setFirstName(rs.getString("firstName"));
@@ -117,37 +104,21 @@ public class AppointmentMethods
 				return staffInstance;
 			}
 
-		} catch (SQLException e) {
+		} catch (Exception e) {
 
 			e.printStackTrace();
-
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally
-		{
-			try 
-			{
-				if (preparedStmnt != null) 
-				{
+		} finally {
+			try {
+				if (preparedStmnt != null) {
 					preparedStmnt.close();
 				}
-			} 
-			catch (final SQLException sqlEx) 
-			{
+			} catch (final SQLException sqlEx) {
 				sqlEx.printStackTrace();
 			}
-	
+
 		}
 		// we didnt find anyone with this Staff id
 		return null;
 
-	}	
+	}
 }

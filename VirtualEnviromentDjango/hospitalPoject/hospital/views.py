@@ -8,6 +8,7 @@ from django.core.context_processors import csrf
 from django.contrib.auth.forms import UserCreationForm
 import urllib2, base64, json
 from forms import MyRegistrationForm
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -140,8 +141,31 @@ def register_failed(request):
 
 
 soap_client_PatientServices = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
+
+@login_required
 def showpatients (request):
+
    results = soap_client_PatientServices.service.returnAllPatients()
    context = { 'results':results, }
    return render(request, 'allpatients.html', context)
 
+
+soap_client_ClinicServices = Client('http://localhost:8080/hospitalServices/ClinicMethodsService?WSDL')
+
+def clinics (request):
+   results = soap_client_ClinicServices.service.returnAllClinics()
+   context = { 'results':results, }
+   return render(request, 'allclinics.html', context)
+
+
+def doctors (request):
+   results = soap_client_ClinicServices.service.returnAllDoctors()
+   context = { 'results':results, }
+   return render(request, 'alldoctors.html', context)
+
+
+@login_required
+def duty (request, doctorid):
+   results = soap_client_ClinicServices.service.returnAllClinicDuty(doctorid)
+   context = { 'results':results, }
+   return render(request, 'allduty.html', context)

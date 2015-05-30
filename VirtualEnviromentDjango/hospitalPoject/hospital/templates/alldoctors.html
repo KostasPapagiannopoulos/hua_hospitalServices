@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Soap WS Users </h1>
+
+<table class="table table-striped">
+
+   <tr class="active">
+
+   <th class="active" >doctorid</th>
+   <th class="active">name</th>
+   <th class="active" >surname</th>
+   <th class="active">specialty</th>
+   <th class="active">Duty</th>
+
+ </tr>
+
+{% for result in results %}
+
+   <tr class="active">
+
+       <td class="active"> {{result.doctorid}} </td>
+       <td class="active"> {{result.name}} </td>
+       <td class="active"> {{result.surname}} </td>
+       <td class="active"> {{result.specialty}} </td>
+
+       <td class="active"> <a href="\hospital\duty\{{result.doctorid}}" >Click for Duty</a> </td>
+
+   <tr/>
+
+{% endfor %}
+
+   </table>
+
+<br>
+
+
+{% endblock %}

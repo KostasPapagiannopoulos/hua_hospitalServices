@@ -9,19 +9,14 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService
-public class PatientMethods {
-	Database db = new Database();
-
-	public Database getDb() {
-		return db;
-	}
+public class PatientMethods extends BaseWebMethods {
 
 	@WebMethod
 	public String insertPatient(Patient patient) {
 		try {
 
 			String SQLStr = "INSERT INTO `itp14105`.`patient` "
-					+ "VALUES (?, ?, ?, ?,  ?, ?, ?, ?, ?);";
+					+ "VALUES (?, ?, ?, ?,  ?, ?, ?, ?, ?, ?);";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
@@ -33,8 +28,8 @@ public class PatientMethods {
 			preparedStmnt.setString(5, patient.getInsuranceFund());
 			preparedStmnt.setInt(6, patient.getAMKA());
 			preparedStmnt.setString(7, patient.getBloodType());
-			preparedStmnt.setString(7, patient.getAddress());
-			preparedStmnt.setString(8, patient.getCountry());
+			preparedStmnt.setString(8, patient.getAddress());
+			preparedStmnt.setString(9, patient.getCountry());
 
 			db.Update(preparedStmnt); // commit
 
@@ -128,19 +123,10 @@ public class PatientMethods {
 				return patientInstance;
 			}
 
-		} catch (SQLException e) {
+		} catch (Exception e) {
 
 			e.printStackTrace();
 
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} finally {
 			try {
 				if (preparedStmnt != null) {

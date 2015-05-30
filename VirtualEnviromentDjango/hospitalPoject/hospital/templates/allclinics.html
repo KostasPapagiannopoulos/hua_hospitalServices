@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Soap WS Users </h1>
+
+<table class="table table-striped">
+
+   <tr class="active">
+
+   <th class="active" >clinicid</th>
+   <th class="active">clinicName</th>
+   <th class="active">clinicType</th>
+
+ </tr>
+
+{% for result in results %}
+
+   <tr class="active">
+
+       <td class="active"> {{result.clinicid}} </td>
+       <td class="active"> {{result.clinicName}} </td>
+       <td class="active"> {{result.clinicType}} </td>
+
+   <tr/>
+
+{% endfor %}
+
+   </table>
+
+<br>
+
+
+{% endblock %}
