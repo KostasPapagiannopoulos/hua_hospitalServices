@@ -137,3 +137,11 @@ def register_success(request):
 
 def register_failed(request):
     return render_to_response('register_failed.html')
+
+
+soap_client_PatientServices = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
+def showpatients (request):
+   results = soap_client_PatientServices.service.returnAllPatients()
+   context = { 'results':results, }
+   return render(request, 'allpatients.html', context)
+

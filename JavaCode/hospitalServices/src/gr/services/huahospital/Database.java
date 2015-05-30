@@ -118,7 +118,7 @@ public class Database {
 		} 
 		finally 
 		{
-			try 
+			/*try 
 			{
 				if (statement != null) 
 				{
@@ -128,7 +128,7 @@ public class Database {
 			catch (final SQLException sqlEx) 
 			{
 				sqlEx.printStackTrace();
-			}
+			}*/
 		}
 		return null;
 	}

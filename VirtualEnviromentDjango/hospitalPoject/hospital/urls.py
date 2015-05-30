@@ -6,6 +6,7 @@ from hospital import views
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
         url(r'^showusers', views.showusers,),
+        url(r'^showpatients', views.showpatients,),
 
 
 

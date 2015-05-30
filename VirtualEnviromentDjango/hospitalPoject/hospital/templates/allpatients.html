@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Soap WS Users </h1>
+
+<table class="table table-striped">
+
+   <tr class="active">
+
+   <th class="active" >patientID</th>
+
+   <th class="active">patientName</th>
+   <th class="active">patientSurname</th>
+   <th class="active">patientGender</th>
+   <th class="active">insuranceFund</th>
+   <th class="active">AMKA</th>
+   <th class="active">bloodType</th>
+   <th class="active">address</th>
+   <th class="active">country</th>
+
+ </tr>
+
+{% for result in results %}
+
+   <tr class="active">
+
+       <td class="active"> {{result.patientID}} </td>
+       <td class="active"> {{result.patientName}} </td>
+       <td class="active"> {{result.patientSurname}} </td>
+       <td class="active"> {{result.patientGender}} </td>
+       <td class="active"> {{result.insuranceFund}} </td>
+       <td class="active"> {{result.AMKA}} </td>
+       <td class="active"> {{result.bloodType}} </td>
+       <td class="active"> {{result.address}} </td>
+       <td class="active"> {{result.country}} </td>
+
+
+   <tr/>
+
+{% endfor %}
+
+   </table>
+
+<br>
+
+<a href="/soap/createuser"> Create new User </a>
+
+{% endblock %}
