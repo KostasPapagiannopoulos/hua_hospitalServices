@@ -2,38 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.core.resources\.root\5.tree" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.debug.core\.launches\GlassFish 4 at localhost [domain1].launch" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\publish.txt" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fdt" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fdx" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fnm" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.frq" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.nrm" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.prx" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.tii" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.tis" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\segments_1" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/.markers" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.jdt.core/state.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.wst.jsdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.wst.jsdt.core/state.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.jdt.core/state.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.wst.jsdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.wst.jsdt.core/state.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.core.resources\.root\5.tree" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fdx" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.prx" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\publish.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fnm" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.tii" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.fdt" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.tis" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_0.nrm" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.metadata\.plugins\org.eclipse.debug.core\.launches\GlassFish 4 at localhost [domain1].launch" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" afterPath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.jdt.core/state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.jdt.core/state.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" afterPath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.wst.jsdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/org.eclipse.wst.jsdt.core/state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.wst.jsdt.core/state.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/org.eclipse.wst.jsdt.core/state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/.markers" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/WebServiceTest/.markers" />
     </list>
     <ignored path="hua_hospitalServices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16594361">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
@@ -152,8 +152,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +270,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -893,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16594361">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
