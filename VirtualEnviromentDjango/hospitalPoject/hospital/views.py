@@ -99,7 +99,7 @@ java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientServ
 
 
 def java_insertUser(patientName):
-    java_Patient_Clinet.service.setPatientID(1);
+    java_Patient_Clinet.service.setPatientID(1)
     java_Patient_Clinet.service.setPatientName(patientName)
     java_Patient_Clinet.service.setPatientSurname("patientSurname")
     java_Patient_Clinet.service.setPatientGender("patientGender")
