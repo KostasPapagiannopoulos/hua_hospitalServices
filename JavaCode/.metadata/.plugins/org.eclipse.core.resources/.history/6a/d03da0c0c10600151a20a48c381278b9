@@ -1,0 +1,213 @@
+package gr.services.huahospital;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService
+public class HospitalStaff 
+{
+	private int staffID;
+	private String firstName;
+	private String lastSurname;
+	private char gender;
+	private String birthDate;
+	private int staffType;
+	private String emp_no;
+	
+	public HospitalStaff() 
+	{
+	}
+	
+	@WebMethod
+	public String insertStaff()
+	{
+		Database db = new Database();
+		
+		String SQLStr = "INSERT INTO `itp14105`.`hospitalstaff` " 
+				+ "VALUES (?, ?, ?, ?,  ?, ?, ?);";				
+		
+		
+		PreparedStatement preparedStatement = db.conn.prepareStatement(SQLStr);
+        preparedStatement.setInt(1,  getStaffID());
+        preparedStatement.setString(2, getFirstName());
+        preparedStatement.setString(3, getLastSurname());
+        preparedStatement.setString(4, getGender());
+        preparedStatement.setDate(5, (Date) getBirthDate());
+        preparedStatement.setInt(7, getStaffType());
+        preparedStatement.setString(8, getEmp_no());
+        
+		
+		
+		String SQLStr = "INSERT INTO `itp14105`.`hospitalstaff` " 
+				+ "VALUES ('" + + "', '" +  + "', '" +  + "', '" +  + "',  '" +  + "', '" +  + "', '" +  + " ');";				
+		Database.Update(SQLStr)
+		Connection conn = null;
+		Statement statement = null;
+		String SQLStr;
+		String retString = "";
+		
+			try
+			{
+				Class.forName("com.mysql.jdbc.Driver").newInstance();
+					
+				conn = DriverManager.getConnection("jdbc:mysql://" + "62.217.125.30:3306/itp14105", "itp14105", "$12345$");	
+				SQLStr = "INSERT INTO `itp14105`.`hospitalstaff` " + "VALUES ('" + getStaffID() + "', '" + getFirstName() + "', '" + getLastSurname() + "', '" + getGender() + "',  '" + getBirthDate() + "', '" + getStaffType() + "', '" + getEmp_no() + " ');";				
+				statement = conn.createStatement();
+				statement.executeUpdate(SQLStr);
+					
+				retString = "Η καταχώρηση σας πραγματοποιήθηκε με επιτυχία! Το Όνομα Χρήστη σας είναι "+ String.valueOf(getStaffID());
+			}
+			catch (SQLException sqlEx)
+			{
+					sqlEx.printStackTrace();
+			}
+			catch (ClassNotFoundException classNotFound)
+			{
+					classNotFound.printStackTrace();
+			}
+			catch (Exception ex)
+			{
+					ex.printStackTrace();
+			}
+			finally
+			{
+				try
+				{
+					if (statement != null)
+					{
+						statement.close();
+					}
+				}
+				catch (final SQLException sqlEx)
+				{
+					sqlEx.printStackTrace();
+				}
+			}
+			return retString;
+		
+	}
+	
+	@WebMethod
+	public ArrayList<HospitalStaff> returnAllStaff()
+	{
+		Connection conn = null;
+		Statement statement = null;
+		String SQLStr = "";
+		ResultSet rs = null;
+		ArrayList<HospitalStaff> arrList = new ArrayList<HospitalStaff>();
+		
+			SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
+			try
+			{
+				Class.forName("com.mysql.jdbc.Driver").newInstance();
+				conn = DriverManager.getConnection("jdbc:mysql://" + "62.217.125.30:3306/itp14105", "itp14105", "$12345$");
+				statement = conn.createStatement();
+				rs = statement.executeQuery(SQLStr);
+				while(rs.next())
+				{
+					HospitalStaff staffInstance = new HospitalStaff();
+					staffInstance.setStaffID(rs.getInt("staffID"));
+					staffInstance.setFirstName(rs.getString("firstName"));
+					staffInstance.setLastSurname(rs.getString("lastName"));
+					staffInstance.setGender(rs.getString("gender").charAt(0));
+					staffInstance.setBirthDate(rs.getString("birthDate"));
+					staffInstance.setStaffType(rs.getInt("staffType"));
+					staffInstance.setEmp_no(rs.getString("emp_no"));
+					
+					arrList.add(staffInstance);
+				}
+			}
+			catch (SQLException sqlEx)
+			{
+				System.err.println(sqlEx.getMessage());
+			}
+			catch (ClassNotFoundException classNotFound)
+			{
+				System.err.println(classNotFound.getMessage());	
+			}
+			catch (Exception ex)
+			{
+				System.err.println(ex.getMessage());
+			}
+			finally
+			{
+				try
+				{
+					if (statement != null)
+					{
+						statement.close();
+					}
+				}
+				catch(final SQLException sqlEx)
+				{
+					System.err.println(sqlEx.getMessage());
+				}
+			}
+		
+			return arrList;
+	}
+
+	public int getStaffID() {
+		return staffID;
+	}
+
+	public void setStaffID(int staffID) {
+		this.staffID = staffID;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastSurname() {
+		return lastSurname;
+	}
+
+	public void setLastSurname(String lastSurname) {
+		this.lastSurname = lastSurname;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
+	public String getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public int getStaffType() {
+		return staffType;
+	}
+
+	public void setStaffType(int staffType) {
+		this.staffType = staffType;
+	}
+
+	public String getEmp_no() {
+		return emp_no;
+	}
+
+	public void setEmp_no(String emp_no) {
+		this.emp_no = emp_no;
+	} 
+}

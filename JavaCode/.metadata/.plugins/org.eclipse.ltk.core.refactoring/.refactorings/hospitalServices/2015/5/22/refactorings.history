@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;preparedStatement&apos; in &apos;gr.services.huahospital.HospitalStaff.insertStaff()&apos; to &apos;preparedStmnt&apos;&#x0D;&#x0A;- Original project: &apos;hospitalServices&apos;&#x0D;&#x0A;- Original element: &apos;gr.services.huahospital.HospitalStaff.insertStaff().preparedStatement&apos;&#x0D;&#x0A;- Renamed element: &apos;preparedStatement&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;preparedStatement&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;gr.services.huahospital{HospitalStaff.java[HospitalStaff~insertStaff@preparedStatement!841!918!859!875!QPreparedStatement;!0!false" name="preparedStmnt" references="true" stamp="1432988566797" version="1.0"/>
+</session>
