@@ -1,16 +1,5 @@
 package gr.services.huahospital;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-
-import javax.jws.WebMethod;
-import javax.jws.WebService;
-
-@WebService
 public class Patient 
 {
 	private int patientID;
@@ -27,119 +16,7 @@ public class Patient
 	{
 	}
 	
-	@WebMethod
-	public String insertPatient()
-	{
-		Connection conn = null;
-		Statement statement = null;
-		String SQLStr;
-		String retString = "";
-		
-			try
-			{
-				Class.forName("com.mysql.jdbc.Driver").newInstance();
-					
-				conn = DriverManager.getConnection("jdbc:mysql://" + "62.217.125.30:3306/itp14105", "itp14105", "$12345$");
-					
-				SQLStr = "INSERT INTO `itp14105`.`patient` " + "VALUES ('" + getPatientID() + "', '" + getPatientName() + "', '" + getPatientSurname() + "', '" + getPatientGender() + "',  '" + getInsuranceFund() + "', '" + getAMKA() + "', '" + getBloodType() + " ', '" + getAddress() + "', '" + getCountry() + "');";
-								
-				statement = conn.createStatement();
-				statement.executeUpdate(SQLStr);
-					
-				retString = "Η καταχώρηση σας πραγματοποιήθηκε με επιτυχία! Το Όνομα Χρήστη σας είναι "+ String.valueOf(getPatientID());
-			}
-			catch (SQLException sqlEx)
-			{
-					sqlEx.printStackTrace();
-			}
-			catch (ClassNotFoundException classNotFound)
-			{
-					classNotFound.printStackTrace();
-			}
-			catch (Exception ex)
-			{
-					ex.printStackTrace();
-			}
-			finally
-			{
-				try
-				{
-					if (statement != null)
-					{
-						statement.close();
-					}
-				}
-				catch (final SQLException sqlEx)
-				{
-					sqlEx.printStackTrace();
-				}
-			}
-			return retString;
-		
-	}
-	
-	@WebMethod
-	public ArrayList<Patient> findPatient()
-	{
-		Connection conn = null;
-		Statement statement = null;
-		String SQLStr = "";
-		ResultSet rs = null;
-		ArrayList<Patient> arrList = new ArrayList<Patient>();
-		
-			SQLStr = "SELECT * FROM `itp14105`.`patient`;";
-			try
-			{
-				Class.forName("com.mysql.jdbc.Driver").newInstance();
-				conn = DriverManager.getConnection("jdbc:mysql://" + "62.217.125.30:3306/itp14105", "itp14105", "$12345$");
-				statement = conn.createStatement();
-				rs = statement.executeQuery(SQLStr);
-				while(rs.next())
-				{
-					Patient patientInstance = new Patient();
-					patientInstance.setPatientID(rs.getInt("patientId"));
-					patientInstance.setPatientName(rs.getString("patientName"));
-					patientInstance.setPatientSurname(rs.getString("patientSurname"));
-					patientInstance.setPatientGender(rs.getString("patientGender").charAt(0));
-					patientInstance.setInsuranceFund(rs.getString("insuranceFund"));
-					patientInstance.setAMKA(rs.getInt("AMKA"));
-					patientInstance.setBloodType(rs.getString("bloodType"));
-					patientInstance.setAddress(rs.getString("address"));
-					patientInstance.setCountry(rs.getString("country"));
-					
-					
-					arrList.add(patientInstance);
-				}
-			}
-			catch (SQLException sqlEx)
-			{
-				System.err.println(sqlEx.getMessage());
-			}
-			catch (ClassNotFoundException classNotFound)
-			{
-				System.err.println(classNotFound.getMessage());	
-			}
-			catch (Exception ex)
-			{
-				System.err.println(ex.getMessage());
-			}
-			finally
-			{
-				try
-				{
-					if (statement != null)
-					{
-						statement.close();
-					}
-				}
-				catch(final SQLException sqlEx)
-				{
-					System.err.println(sqlEx.getMessage());
-				}
-			}
-		
-			return arrList;
-	} 
+	 
 	
 	public int getPatientID() 
 	{
@@ -213,7 +90,6 @@ public class Patient
 
 	public String getAddress()
 	{
-
 		return address;
 	}
 

@@ -2,17 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="java.sql.Date" key="selection"/>
+		<item value="patient" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="hospitalStaff"/>
 			<item value="java.sql.Date"/>
 			<item value="java.sql"/>
 			<item value="conn"/>
 		</list>
 		<list key="replacehistory">
+			<item value="patient"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

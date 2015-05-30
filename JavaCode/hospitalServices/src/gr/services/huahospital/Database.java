@@ -16,9 +16,10 @@ public class Database {
 	private Connection conn;
 
 	public Connection getConn() throws InstantiationException,
-			IllegalAccessException, ClassNotFoundException, SQLException {
-
-		if (conn == null) {
+			IllegalAccessException, ClassNotFoundException, SQLException 
+	{
+		if (conn == null) 
+		{
 			// Create the connection
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			conn = DriverManager
@@ -27,72 +28,108 @@ public class Database {
 		return conn;
 	}
 
-	public int Update(PreparedStatement statement) {
-
-		try {
+	public int Update(PreparedStatement statement) //query, no response
+	{
+		try 
+		{
 			return statement.executeUpdate();
-		} catch (SQLException sqlEx) {
+		} 
+		catch (SQLException sqlEx) 
+		{
 			sqlEx.printStackTrace();
-		} catch (Exception ex) {
+		} 
+		catch (Exception ex) 
+		{
 			ex.printStackTrace();
-		} finally {
+		} 
+		finally 
+		{
 			try {
-				if (statement != null) {
-					statement.close();
-				}
-			} catch (final SQLException sqlEx) {
+					if (statement != null) 
+					{
+						statement.close();
+					}
+				} 
+			catch (final SQLException sqlEx) 
+			{
 				sqlEx.printStackTrace();
 			}
 		}
 		return -1;
-
 	}
 
-	public ResultSet Query(PreparedStatement statement) {
-		try {
+	public ResultSet Query(PreparedStatement statement) //query+attributes
+	{
+		try 
+		{
 			return statement.executeQuery();
-		} catch (SQLException sqlEx) {
+		} 
+		catch (SQLException sqlEx) 
+		{
 			sqlEx.printStackTrace();
-		} catch (Exception ex) {
+		} 
+		catch (Exception ex) 
+		{
 			ex.printStackTrace();
-		} finally {
-			try {
-				if (statement != null) {
+		} 
+		/*finally 
+		{
+			try 
+			{
+				if (statement != null) 
+				{
 					statement.close();
 				}
-			} catch (final SQLException sqlEx) {
+			} 
+			catch (final SQLException sqlEx) 
+			{
 				sqlEx.printStackTrace();
 			}
-		}
+		}*/
 		return null;
 	}
 
-	public ResultSet Query(String query) {
-		try {
+	public ResultSet Query(String query) //simpleUse 
+	{
+		try 
+		{
 			return Query(conn.createStatement(), query);
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) 
+		{
 			e.printStackTrace();
 			return null;
 		}
 	}
 
-	public ResultSet Query(Statement statement, String query) {
-		try {
+	public ResultSet Query(Statement statement, String query) 
+	{
+		try 
+		{
 			return statement.executeQuery(query);
-		} catch (SQLException sqlEx) {
+		} 
+		catch (SQLException sqlEx) 
+		{
 			sqlEx.printStackTrace();
-		} catch (Exception ex) {
+		} 
+		catch (Exception ex) 
+		{
 			ex.printStackTrace();
-		} finally {
-			try {
-				if (statement != null) {
+		} 
+		finally 
+		{
+			try 
+			{
+				if (statement != null) 
+				{
 					statement.close();
 				}
-			} catch (final SQLException sqlEx) {
+			} 
+			catch (final SQLException sqlEx) 
+			{
 				sqlEx.printStackTrace();
 			}
 		}
 		return null;
-
 	}
 }

@@ -1,4 +1,3 @@
 #GlassFish 3
-#Sat May 30 16:06:14 EEST 2015
-org.eclipse.jst.jee.server\:hospitalServices=E\:\\PrivateFiles\\Downloads\\programming\\Glashfish\\glassfish\\domains\\domain1\\eclipseApps\\hospitalServices
-org.eclipse.jst.jee.server\:WebServiceTest=E\:\\PrivateFiles\\Downloads\\programming\\Glashfish\\glassfish\\domains\\domain1\\eclipseApps\\WebServiceTest
+#Sat May 30 20:06:18 EEST 2015
+org.eclipse.jst.jee.server\:hospitalServices=P\:\\Program Files (x86)\\GlassFish 4.1 Server\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\hospitalServices
