@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     (r'^accounts/register_success/$', views.register_success),
     (r'^accounts/register_failed/$', views.register_failed),
 
+    url(r'^pat/', include('patient.urls'),),
 
 
 )
