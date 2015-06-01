@@ -16,21 +16,22 @@ public class PatientMethods extends BaseWebMethods {
 		try {
 
 			String SQLStr = "INSERT INTO `itp14105`.`patient` "
-					+ "VALUES (?, ?, ?, ?,  ?, ?, ?, ?, ?, ?);";
+					+ "(patientName, PatientSurname, patientGender, insuranceFund, AMKA, bloodType, address, country, email)"
+					+ "VALUES (?, ?, ?,  ?, ?, ?, ?, ?, ?);";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
-			preparedStmnt.setInt(1, patient.getPatientID());
-			preparedStmnt.setString(2, patient.getPatientName());
-			preparedStmnt.setString(3, patient.getPatientSurname());
-			preparedStmnt.setString(4,
+			
+			preparedStmnt.setString(1, patient.getPatientName());
+			preparedStmnt.setString(2, patient.getPatientSurname());
+			preparedStmnt.setString(3,
 					Character.toString(patient.getPatientGender()));
-			preparedStmnt.setString(5, patient.getInsuranceFund());
-			preparedStmnt.setInt(6, patient.getAMKA());
-			preparedStmnt.setString(7, patient.getBloodType());
-			preparedStmnt.setString(8, patient.getAddress());
-			preparedStmnt.setString(9, patient.getCountry());
-			preparedStmnt.setString(10, patient.getEmail());
+			preparedStmnt.setString(4, patient.getInsuranceFund());
+			preparedStmnt.setInt(5, patient.getAMKA());
+			preparedStmnt.setString(6, patient.getBloodType());
+			preparedStmnt.setString(7, patient.getAddress());
+			preparedStmnt.setString(8, patient.getCountry());
+			preparedStmnt.setString(9, patient.getEmail());
 
 			db.Update(preparedStmnt); // commit
 

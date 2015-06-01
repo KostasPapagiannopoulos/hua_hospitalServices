@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
 import urllib2, base64, json
 from forms import MyRegistrationForm
+from forms import USER_TYPE_CHOICES
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 
@@ -73,20 +74,25 @@ def logout(request):
 
 def register_user(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = MyRegistrationForm(request.POST)
         if form.is_valid():
-            if not (userExists(form.cleaned_data['username'])):
-                # if the user does not exist
-                return HttpResponseRedirect('/accounts/register_failed')
+            if not(form.cleaned_data['user_type'] == 'Patient'):
+                # if its a patient, we dont need to check his username
+                response = java_insertUser(form)
+            else:
+                if not (userExists(form.cleaned_data['username'])):
+                    # if the user does not exist
+                    return HttpResponseRedirect('/accounts/register_failed')
+                # else save him
+                response = java_insertStaff(form)
 
-            # else save him
-            response =  java_insertStaff(form.cleaned_data['username'])
             if (response):
                 form.save()
-            return HttpResponseRedirect('/accounts/register_success')
-
+                return HttpResponseRedirect('/accounts/register_success')
+            else:
+                 return HttpResponseRedirect('/accounts/register_failed')
     else:
-        form = UserCreationForm()
+        form = MyRegistrationForm()
     args = {}
     args.update(csrf(request))
 
@@ -96,37 +102,33 @@ def register_user(request):
 
 
 java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
-
-
-def java_insertUser(patientName):
-    java_Patient_Clinet.service.setPatientID(2)
-    java_Patient_Clinet.service.setPatientName(patientName)
-    java_Patient_Clinet.service.setPatientSurname("patientSurname")
-    java_Patient_Clinet.service.setPatientGender("patientGender")
-    java_Patient_Clinet.service.setInsuranceFund("insuranceFund")
-    java_Patient_Clinet.service.setAMKA(000)
-    java_Patient_Clinet.service.setBloodType("bloodType")
-    java_Patient_Clinet.service.setAddress("address")
-    java_Patient_Clinet.service.setCountry("country")
-    java_Patient_Clinet.service.insertPatient()
-    return HttpResponse("Rango says Rango")
+def java_insertUser(form):
+    patient = java_Patient_Clinet.factory.create('patient')
+    patient.patientName = form.cleaned_data['first_name']
+    patient.patientSurname = form.cleaned_data['last_name']
+    patient.patientGender = form.cleaned_data['gender']
+    patient.insuranceFund = 'insuranceFund'
+    patient.AMKA = form.cleaned_data['amka']
+    patient.bloodType = 'bloodType'
+    patient.address = 'address'
+    patient.country = 'country'
+    patient.email = form.cleaned_data['email']
+    return java_Patient_Clinet.service.insertPatient(patient) != "Error"
 
 
 java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffMethodsService?WSDL')
+def java_insertStaff(form):
 
-
-def java_insertStaff(username):
-    print java_Staff_Client
     hospitalstaff = java_Staff_Client.factory.create('hospitalStaff')
-    #hospitalstaff.staffID = 101
-    hospitalstaff.firstName = 'name_of_' + username
-    hospitalstaff.lastSurname = 'surname_of_' + username
-    hospitalstaff.gender = 'M'
-    hospitalstaff.birthDate = '2015-05-01'
-    hospitalstaff.staffType = 1
-    hospitalstaff.emp_no = username
 
-    return java_Staff_Client.service.insertStaff(hospitalstaff)
+    hospitalstaff.firstName = form.cleaned_data['first_name']
+    hospitalstaff.lastSurname = form.cleaned_data['last_name']
+    hospitalstaff.gender = form.cleaned_data['gender']
+    hospitalstaff.birthDate = '2015-05-01'
+    hospitalstaff.staffType = form.cleaned_data['user_type']
+    hospitalstaff.emp_no = form.cleaned_data['username']
+
+    return java_Staff_Client.service.insertStaff(hospitalstaff) != "Error"
 
 
 
