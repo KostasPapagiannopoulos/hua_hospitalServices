@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from hospital import views
+
 
 urlpatterns = patterns('',
     # Examples:
@@ -12,14 +12,14 @@ urlpatterns = patterns('',
     #url(r'^accounts/', include('registration.backends.default.urls')),
     (r'^accR/', include('registration.backends.simple.urls')),
 
-    (r'^accounts/login/$', views.login),
-    (r'^accounts/auth/$', views.auth_view),
-    (r'^accounts/logout/$', views.logout),
-    (r'^accounts/loggedin/$', views.loggedin),
-    (r'^accounts/invalid', views.invalid_login),
+    (r'^accounts/login/$', 'hospital.views.login'),
+    (r'^accounts/auth/$', 'hospital.views.auth_view'),
+    (r'^accounts/logout/$', 'hospital.views.logout'),
+    (r'^accounts/loggedin/$', 'hospital.views.loggedin'),
+    (r'^accounts/invalid', 'hospital.views.invalid_login'),
     (r'^accounts/register/$', 'hospital.views.register_user'),
-    (r'^accounts/register_success/$', views.register_success),
-    (r'^accounts/register_failed/$', views.register_failed),
+    (r'^accounts/register_success/$', 'hospital.views.register_success'),
+    (r'^accounts/register_failed/$', 'hospital.views.register_failed'),
 
     url(r'^pat/', include('patient.urls'),),
 
