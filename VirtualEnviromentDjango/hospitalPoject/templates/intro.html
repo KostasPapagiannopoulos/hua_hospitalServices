@@ -1,0 +1,10 @@
+﻿{% extends "home.html" %}
+{% block content %}
+{% for intro in object_list %}
+<h2>{{ intro.title }}</h2>
+<div class="intro_body">
+{{ intro.body|safe|linebreaks }}
+</div>
+<h4>Ημέρες και ώρες λειτουργίας</h4>
+ {% endfor %}
+{% endblock %}

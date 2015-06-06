@@ -38,8 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'hospital',
     'registration',
+    'intro', 
     'patient',
     'bootstrapform',
+
 )
 
 MIDDLEWARE_CLASSES = (

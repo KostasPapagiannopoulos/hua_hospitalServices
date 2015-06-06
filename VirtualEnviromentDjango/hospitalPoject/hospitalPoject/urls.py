@@ -2,15 +2,19 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
 
+
+
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'hospitalPoject.views.home', name='home'),
+    url(r'^$', 'hospitalPoject.views.home'),
+    url(r'^intro/', include('intro.urls')),                   
     # url(r'^blog/', include('blog.urls')),
-
+    #url(r'^$', 'home.views.index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hospital/', include('hospital.urls')),
     #url(r'^accounts/', include('registration.backends.default.urls')),
     (r'^accR/', include('registration.backends.simple.urls')),
+                       
 
     (r'^accounts/login/$', 'hospital.views.login'),
     (r'^accounts/auth/$', 'hospital.views.auth_view'),

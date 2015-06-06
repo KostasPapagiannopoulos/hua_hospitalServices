@@ -1,7 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="" />
+    <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/hua-04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/clinics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/Python-ast.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/Python-ast.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/Python.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/Python.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/__init__.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/abstract.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/abstract.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activate.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_complete.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email.txt" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email_subject.txt" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/activation_email_subject.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/asdl.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/asdl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ast.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ast.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/fixtures/basic.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/fixtures/basic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bitset.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bitset.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/boolobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/boolobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templatetags/bootstrap.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templatetags/bootstrap.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bufferobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bufferobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytearrayobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytearrayobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytes_methods.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytes_methods.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytesobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/bytesobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cStringIO.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cStringIO.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cellobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cellobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ceval.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ceval.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/classobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/classobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/cobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/code.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/code.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/codecs.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/codecs.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/compile.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/compile.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/complexobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/complexobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/config.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/datetime.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/datetime.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/descrobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/descrobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/dictobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/dictobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/dtoa.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/dtoa.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/enumobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/enumobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/errcode.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/errcode.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/eval.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/eval.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/field.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/field.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/fileobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/fileobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/floatobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/floatobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/form.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/formset.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/templates/bootstrapform/formset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/frameobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/frameobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/funcobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/funcobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/genobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/genobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/graminit.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/graminit.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/grammar.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/grammar.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/fixtures/horizontal.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/fixtures/horizontal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/import.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/import.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/intobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/intobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/intrcheck.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/intrcheck.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/iterobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/iterobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/listobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/listobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/login.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/login.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/logout.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/logout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/longintrepr.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/longintrepr.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/longobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/longobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/marshal.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/marshal.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/memoryobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/memoryobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/meta.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/meta.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/metagrammar.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/metagrammar.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/methodobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/methodobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/modsupport.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/modsupport.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/moduleobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/moduleobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/node.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/node.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/object.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/object.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/objimpl.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/objimpl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/opcode.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/opcode.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/osdefs.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/osdefs.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/parsetok.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/parsetok.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_change_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_change_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_email.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/password_reset_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/patchlevel.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/patchlevel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pgen.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pgen.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pgenheaders.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pgenheaders.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/py_curses.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/py_curses.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyarena.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyarena.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pycapsule.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pycapsule.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyconfig.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyconfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyctype.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyctype.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pydebug.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pydebug.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyerrors.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyerrors.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyexpat.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyexpat.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyfpe.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyfpe.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pygetopt.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pygetopt.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymacconfig.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymacconfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymactoolbox.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymactoolbox.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymath.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymath.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymem.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pymem.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyport.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pyport.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystate.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystrcmp.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystrcmp.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystrtod.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pystrtod.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pythonrun.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pythonrun.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pythread.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/pythread.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/rangeobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/rangeobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_base.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_closed.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_closed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/registration/registration_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/setobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/setobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/sliceobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/sliceobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/stringobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/stringobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/structmember.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/structmember.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/structseq.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/structseq.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/symtable.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/symtable.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/sysmodule.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/sysmodule.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/tests.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/bootstrapform/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/timefuncs.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/timefuncs.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/token.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/token.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/traceback.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/traceback.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/tupleobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/tupleobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ucnhash.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/ucnhash.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/unicodeobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/unicodeobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" afterPath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/warnings.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/warnings.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/weakrefobject.h" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/VirtualEnviromentDjango/Include/weakrefobject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="hua_hospitalServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +160,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -29,6 +168,16 @@
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,8 +207,48 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clinics.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/clinics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/intro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,8 +291,8 @@
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/login.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
       </list>
     </option>
   </component>
@@ -230,7 +419,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,7 +441,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
+              <option name="myItemId" value="patient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VirtualEnviromentDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,9 +657,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22276689" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22276689" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -529,27 +740,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_failed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/Lib/site-packages/django/conf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -808,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14071038">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04781421">
@@ -853,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -871,14 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -900,6 +1068,54 @@
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/clinics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
