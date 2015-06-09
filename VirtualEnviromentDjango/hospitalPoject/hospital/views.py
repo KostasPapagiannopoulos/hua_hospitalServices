@@ -7,7 +7,7 @@ from django.shortcuts import render
 from suds.client import Client
 from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
-from forms import MyRegistrationForm, EditAppointmentForm
+from forms import MyRegistrationForm, EditAppointmentForm, EditAppointmentForm_by_director
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import auth
 
@@ -83,15 +83,15 @@ def register_user(request):
     if request.method == 'POST':
         form = MyRegistrationForm(request.POST)
         if form.is_valid():
-            if not (form.cleaned_data['user_type'] == 'Patient'):
-                # if its a patient, we dont need to check his username
-                response = java_insertUser(form)
-            else:
-                if not (userExists(form.cleaned_data['username'])):
-                    # if the user does not exist
-                    return HttpResponseRedirect('/accounts/register_failed')
-                # else save him
-                response = java_insertStaff(form)
+            #if not (form.cleaned_data['user_type'] == 'Patient'):
+            #    # if its a patient, we dont need to check his username
+            #    response = java_insertUser(form)
+            #else:
+            if not (userExists(form.cleaned_data['username'])):
+                # if the user does not exist
+                return HttpResponseRedirect('/accounts/register_failed')
+            # else save him
+            response = java_insertStaff(form)
 
             if (response):
                 form.save()
@@ -163,6 +163,11 @@ def user_in_staff_group(user):
         return user.groups.filter(name='doctor').count() != 0
     return False
 
+def user_in_director_group(user):
+    if user:
+        return user.groups.filter(name='director').count() != 0
+    return False
+
 
 @login_required(login_url='/accounts/login/')
 @user_passes_test(user_in_staff_group, login_url='/accounts/login/')
@@ -217,6 +222,14 @@ def pendingappointments(request):
     context = {'appointments': appointments}
     return render(request, 'pendingappointments.html', context)
 
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_director_group, login_url='/accounts/login/')
+def appointments_director(request):
+    appointments = java_Appointment_Client.service.returnAllAppointments_Director()
+    context = {'appointments': appointments}
+    return render(request, 'pendingappointments_director.html', context)
+
+
 
 @login_required(login_url='/accounts/login/')
 @user_passes_test(user_in_staff_group, login_url='/accounts/login/')
@@ -250,3 +263,40 @@ def appointment_edit(request, appointmentID):
                 return HttpResponse("Appointment Not Updated")
     return render(request, 'appointment.html',
                   {'form': form, 'action_url': '/hospital/appointment/' + appointmentID})
+
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_director_group, login_url='/accounts/login/')
+def appointment_edit_by_director(request, appointmentID):
+    currentAppointment = java_Appointment_Client.service.returnAppointmentById(appointmentID)
+
+    if currentAppointment is None:
+        return HttpResponse("Appointment Not Found!")
+    if request.method == 'GET':
+        form = EditAppointmentForm_by_director(appointment=currentAppointment)
+    else:
+        appointment = java_Appointment_Client.factory.create('appointment')
+
+        form = EditAppointmentForm_by_director(request.POST, appointment=currentAppointment)
+        if form.is_valid():
+            appointment.appointmentID = appointmentID
+            appointment.patientName = form.cleaned_data['patientName']
+            appointment.patientSurname = form.cleaned_data['patientSurname']
+            appointment.AMKA = form.cleaned_data['AMKA']
+            appointment.insuranceFund = form.cleaned_data['insuranceFund']
+            appointment.clinicid = form.cleaned_data['clinicid']
+            appointment.diseaseDetails = form.cleaned_data['diseaseDetails']
+            appointment.strAppointmentDate = form.cleaned_data['appointmentDate']
+            appointment.strAppointmentTime = form.cleaned_data['appointmentTime']
+            appointment.appointmentEmergency = form.cleaned_data['appointmentEmergency']
+            appointment.rejectReasons = form.cleaned_data['rejectReasons']
+            result = java_Appointment_Client.service.HeadUpdatesAppointment(appointment)
+            if result:
+                return HttpResponseRedirect('/hospital/pendingappointments_director')
+
+            else:
+                return HttpResponse("Appointment Not Updated")
+    return render(request, 'appointment.html',
+                  {'form': form, 'action_url': '/hospital/appointment_by_director/' + appointmentID})
+

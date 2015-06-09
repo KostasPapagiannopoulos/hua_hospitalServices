@@ -60,14 +60,20 @@ public class AppointmentMethods extends BaseWebMethods {
 		try {
 
 			String SQLStr = "UPDATE `itp14105`.`appointment` "
-					+ "SET clinicid=?, appointmentDate=?, appointmentTime=?, appointmentState=?);";
+					+ " SET clinicid=?, appointmentDate=?, appointmentTime=?, appointmentState=? , rejectReasons = ? , appointmentEmergency = ? "
+					+ " WHERE appointmentID = ?;";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
 			preparedStmnt.setInt(1, appointment.getClinicid());
 			preparedStmnt.setDate(2, appointment.getAppointmentDate());
 			preparedStmnt.setTime(3, appointment.getAppointmentTime());
-			preparedStmnt.setInt(4, 2);
+			preparedStmnt.setInt(4, 10);
+			preparedStmnt.setString(5, appointment.getRejectReasons());
+			preparedStmnt.setInt(6, appointment.getAppointmentEmergency());
+			
+			preparedStmnt.setInt(7, appointment.getAppointmentID());
+			
 
 			db.Update(preparedStmnt); // commit
 			return "Το ραντεβού σας ενημερώθηκε επιτυχώς!";
@@ -91,7 +97,7 @@ public class AppointmentMethods extends BaseWebMethods {
 			preparedStmnt.setInt(1, appointment.getClinicid());
 			preparedStmnt.setDate(2, appointment.getAppointmentDate());
 			preparedStmnt.setTime(3, appointment.getAppointmentTime());
-			preparedStmnt.setInt(4, 2);
+			preparedStmnt.setInt(4, appointment.getAppointmentEmergency() == 1 ? 10 : 2);
 			preparedStmnt.setInt(5, appointment.getAppointmentID());
 			
 
@@ -192,6 +198,27 @@ public class AppointmentMethods extends BaseWebMethods {
 			ArrayList<Appointment> arrList = new ArrayList<Appointment>();
 
 			String SQLStr = "SELECT * FROM `itp14105`.`appointment`;";
+			ResultSet rs = db.Query(SQLStr);
+			while (rs.next()) {
+				Appointment appointmentInstance = getAppointment(rs);
+
+				arrList.add(appointmentInstance);
+			}
+			return arrList;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ArrayList<Appointment>();
+		}
+	}
+	
+	@WebMethod
+	public ArrayList<Appointment> returnAllAppointments_Director() {
+		try {
+			ArrayList<Appointment> arrList = new ArrayList<Appointment>();
+
+			String SQLStr = "SELECT * FROM `itp14105`.`appointment`"
+					+ "where appointmentEmergency = 2;";
+			
 			ResultSet rs = db.Query(SQLStr);
 			while (rs.next()) {
 				Appointment appointmentInstance = getAppointment(rs);

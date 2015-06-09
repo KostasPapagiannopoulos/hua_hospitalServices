@@ -13,6 +13,7 @@
         <th class="">Πρόβλημα</th>
         <th class="">Ημ/νία</th>
         <th class="">Επείγον</th>
+        <th class="">Αίτία απόρριψης</th>
         <th class="">Κατάσταση</th>
 
 
@@ -27,9 +28,11 @@
         <td class=""> {{result.diseaseDetails}}</td>
         <td class=""> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
         <td class=""> {{result.appointmentEmergency}}</td>
+        <td class=""> {{result.rejectReasons}}</td>
+
         <td class="">
             {% if result.appointmentState == 1%}
-            <a href="/hospital/appointment/{{result.appointmentID}}">Επεξεργασία</a>
+            <a href="/hospital/appointment_by_director/{{result.appointmentID}}">Επεξεργασία</a>
             {% else %}
             Είναι στο status {{result.appointmentState}}
             {% endif%}
