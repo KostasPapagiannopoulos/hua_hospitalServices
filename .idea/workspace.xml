@@ -2,162 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/templates/allappointments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/alldoctorappoitments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/login_pat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_pat_success.html" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.fdt" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.fdx" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.fnm" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.frq" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.nrm" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.prx" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.tii" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\_3.tis" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\index\http___download_eclipse_org_recommenders_models_luna_\segments_4" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\Python-ast.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\Python.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\abstract.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\asdl.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\ast.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\bitset.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\boolobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\bufferobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\bytearrayobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\bytes_methods.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\bytesobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\cStringIO.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\cellobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\ceval.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\classobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\cobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\code.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\codecs.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\compile.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\complexobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\datetime.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\descrobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\dictobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\dtoa.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\enumobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\errcode.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\eval.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\fileobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\floatobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\frameobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\funcobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\genobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\graminit.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\grammar.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\import.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\intobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\intrcheck.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\iterobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\listobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\longintrepr.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\longobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\marshal.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\memoryobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\metagrammar.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\methodobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\modsupport.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\moduleobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\node.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\object.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\objimpl.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\opcode.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\osdefs.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\parsetok.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\patchlevel.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pgen.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pgenheaders.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\py_curses.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyarena.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pycapsule.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyctype.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pydebug.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyerrors.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyexpat.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyfpe.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pygetopt.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pymacconfig.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pymactoolbox.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pymath.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pymem.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pyport.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pystate.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pystrcmp.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pystrtod.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pythonrun.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\pythread.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\rangeobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\setobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\sliceobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\stringobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\structmember.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\structseq.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\symtable.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\sysmodule.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\timefuncs.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\token.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\traceback.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\tupleobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\ucnhash.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\unicodeobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\warnings.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Include\weakrefobject.h" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Scripts\python.exe" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\VirtualEnviromentDjango\hospitalPoject\VirtualEnviromentDjango\Scripts\pythonw.exe" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/4142542217.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/4142542217.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/AppointmentMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/AppointmentMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaffMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaffMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Patient.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Patient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/PatientMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/PatientMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.indexes/e4/eb/5e/2e/history.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.indexes/e4/eb/5e/2e/history.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Appointment.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Appointment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/ClinicMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/ClinicMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Database.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/allduty.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/allduty.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/loggedin.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/loggedin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.core.prefs" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_pat.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_pat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_success.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_success.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" afterPath="$PROJECT_DIR$/JavaCode/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/urls.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" afterPath="$PROJECT_DIR$/JavaCode/.metadata/version.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hua_hospitalServices.iws" />
@@ -182,8 +31,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.8918915">
-              <caret line="138" column="98" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="98" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="135" column="68" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="68" />
               <folding>
                 <element signature="e#46#82#0" expanded="true" />
               </folding>
@@ -191,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.689655">
-              <caret line="238" column="62" selection-start-line="238" selection-start-column="54" selection-end-line="238" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.13611615">
+              <caret line="222" column="20" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -223,14 +72,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7619048">
-              <caret line="100" column="76" selection-start-line="100" selection-start-column="76" selection-end-line="100" selection-end-column="76" />
-              <folding>
-                <element signature="e#46#70#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-1.7586207">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -248,9 +95,11 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="43.96552">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="-10.206897">
+              <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+              <folding>
+                <element signature="e#47#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -300,11 +149,11 @@
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py" />
       </list>
     </option>
   </component>
@@ -709,11 +558,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20103627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20103627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36994818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36994818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -744,17 +593,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
           <line>97</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py</url>
-          <line>51</line>
+          <line>52</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -767,18 +611,8 @@
           <line>75</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py</url>
-          <line>148</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
-          <line>234</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1018,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/Lib/site-packages/django/contrib/auth/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1129,18 +955,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7586207">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/Lib/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33275864">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="43.96552">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="46" />
-          <folding />
+        <state vertical-scroll-proportion="-10.206897">
+          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+          <folding>
+            <element signature="e#47#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.8918915">
-          <caret line="138" column="98" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="98" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="68" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="68" />
           <folding>
             <element signature="e#46#82#0" expanded="true" />
           </folding>
@@ -1149,20 +993,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.689655">
-          <caret line="238" column="62" selection-start-line="238" selection-start-column="54" selection-end-line="238" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.13611615">
+          <caret line="222" column="20" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="20" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7619048">
-          <caret line="100" column="76" selection-start-line="100" selection-start-column="76" selection-end-line="100" selection-end-column="76" />
-          <folding>
-            <element signature="e#46#70#0" expanded="true" />
           </folding>
         </state>
       </provider>

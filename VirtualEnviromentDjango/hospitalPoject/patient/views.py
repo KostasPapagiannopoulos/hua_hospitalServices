@@ -126,14 +126,14 @@ def new_appointment(request):
             appointment.patientSurname = form.cleaned_data['patientSurname']
             appointment.AMKA = form.cleaned_data['AMKA']
             appointment.insuranceFund = form.cleaned_data['insuranceFund']
-            #appointment.clinicid = form.cleaned_data['clinicid']
+            appointment.clinicid = form.cleaned_data['clinicid']
             appointment.diseaseDetails = form.cleaned_data['diseaseDetails']
             appointment.strAppointmentDate = form.cleaned_data['appointmentDate']
             appointment.strAppointmentTime = form.cleaned_data['appointmentTime']
             appointment.appointmentEmergency = form.cleaned_data['appointmentEmergency']
             result = java_Appointment_Client.service.insertAppointment(appointment)
             if result:
-                 HttpResponseRedirect('/pat/appointment/all')
+                 return HttpResponseRedirect('/pat/appointment/all')
             else:
                 return HttpResponse("Request Not Created")
     return render(request, 'appointment.html', {'form': form, 'action_url': '/pat/appointment/new'})

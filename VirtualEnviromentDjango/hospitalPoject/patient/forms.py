@@ -99,7 +99,7 @@ class NewAppointmentForm(forms.Form):
     patientSurname = forms.CharField(label='Επώνυμο', max_length=100, required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
     AMKA = forms.IntegerField(label='ΑΜΚΑ', required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
     diseaseDetails = forms.CharField(label='Ποιό είναι το πρόβλημα σας', max_length=100, required=True)
-    #clinicid = forms.ChoiceField(label='Κλινική', required=True, choices=clinic_choices)
+    clinicid = forms.ChoiceField(label='Κλινική', required=True, choices=clinic_choices)
     insuranceFund = forms.CharField(label='Ασφάλεια', max_length=100, required=True)
     appointmentDate = forms.DateField(label="Ημερομηνία", required=True, input_formats=['%d/%m/%Y'],
                                       initial=df.format('d/m/Y'))

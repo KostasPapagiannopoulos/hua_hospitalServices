@@ -232,6 +232,7 @@ def appointment_edit(request, appointmentID):
 
         form = EditAppointmentForm(request.POST, appointment=currentAppointment)
         if form.is_valid():
+            appointment.appointmentID = appointmentID
             appointment.patientName = form.cleaned_data['patientName']
             appointment.patientSurname = form.cleaned_data['patientSurname']
             appointment.AMKA = form.cleaned_data['AMKA']
@@ -243,7 +244,8 @@ def appointment_edit(request, appointmentID):
             appointment.appointmentEmergency = form.cleaned_data['appointmentEmergency']
             result = java_Appointment_Client.service.staffUpdatesAppointment(appointment)
             if result:
-                HttpResponseRedirect('/hospital/pendingappointments')
+                return HttpResponseRedirect('/hospital/pendingappointments')
+
             else:
                 return HttpResponse("Appointment Not Updated")
     return render(request, 'appointment.html',

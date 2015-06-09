@@ -83,7 +83,8 @@ public class AppointmentMethods extends BaseWebMethods {
 		try {
 
 			String SQLStr = "UPDATE `itp14105`.`appointment` "
-					+ "SET clinicid=?, appointmentDate=?, appointmentTime=?, appointmentState=?);";
+					+ "SET clinicid=?, appointmentDate=?, appointmentTime=?, appointmentState=? "
+					+ "WHERE appointmentID = ?;";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
@@ -91,6 +92,8 @@ public class AppointmentMethods extends BaseWebMethods {
 			preparedStmnt.setDate(2, appointment.getAppointmentDate());
 			preparedStmnt.setTime(3, appointment.getAppointmentTime());
 			preparedStmnt.setInt(4, 2);
+			preparedStmnt.setInt(5, appointment.getAppointmentID());
+			
 
 			db.Update(preparedStmnt); // commit
 			return true;
