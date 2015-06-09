@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Τα ραντεβού μου </h1>
+
+<table class="table table-striped">
+
+    <tr class="active">
+        <th class="">ID</th>
+        <th class="">Ονομ/μο</th>
+        <th class="">ΑΜΚΑ</th>
+        <th class="">Πρόβλημα</th>
+        <th class="">Ημ/νία</th>
+        <th class="">Επείγον</th>
+        <th class="">Κατάσταση</th>
+
+
+    </tr>
+
+    {% for result in appointments %}
+
+    <tr class="">
+        <td class=""> {{result.appointmentID}}</td>
+        <td class=""> {{result.patientName}} {{result.patientSurname}}</td>
+        <td class=""> {{result.AMKA}}</td>
+        <td class=""> {{result.diseaseDetails}}</td>
+        <td class=""> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
+        <td class=""> {{result.appointmentEmergency}}</td>
+        <td class="">
+            {% if result.appointmentState == 1%}
+            <a href="/hospital/appointment/{{result.appointmentID}}">Επεξεργασία</a>
+            {% endif%}
+
+
+        </td>
+
+
+    <tr/>
+
+    {% endfor %}
+
+</table>
+
+
+{% endblock %}

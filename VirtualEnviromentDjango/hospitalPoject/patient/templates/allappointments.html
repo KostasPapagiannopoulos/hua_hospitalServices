@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Τα ραντεβού μου </h1>
+
+
+<h2>
+    {{patient.patientName}}
+    {{patient.patientSurname}}
+    AMKA: {{patient.AMKA}}
+</h2>
+
+
+<table class="table table-striped">
+
+    <tr class="active">
+        <th class="active"> ID</th>
+        <th class="active"> insuranceFund</th>
+        <th class="active"> clinicid</th>
+        <th class="active"> diseaseDetails</th>
+        <th class="active"> strAppointmentDate</th>
+        <th class="active"> strAppointmentTime</th>
+        <th class="active"> appointmentEmergency</th>
+        <th class="active"> rejectReasons</th>
+        <th class="active"> appointmentState</th>
+
+    </tr>
+
+    {% for result in results %}
+    {% if result.appointmentState != 1 %}
+    <tr class="active">
+        {% else %}
+    <tr class="">
+        {% endif %}
+
+        <td class=""> {{result.appointmentID}}</td>
+        <td class=""> {{result.insuranceFund}}</td>
+        <td class=""> {{result.clinicid}}</td>
+        <td class=""> {{result.diseaseDetails}}</td>
+        <td class=""> {{result.strAppointmentDate}}</td>
+        <td class=""> {{result.strAppointmentTime}}</td>
+        <td class=""> {{result.appointmentEmergency}}</td>
+        <td class="">{{result.rejectReasons}}</td>
+        <td class=""> {{result.appointmentState}}</td>
+
+
+    <tr/>
+
+    {% endfor %}
+
+</table>
+
+<br>
+
+
+{% endblock %}

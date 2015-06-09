@@ -12,6 +12,10 @@ public class Patient
 	private String address;
 	private String country;
 	private String email;
+	private String username;
+
+
+
 
 	public Patient() 
 	{
@@ -121,4 +125,14 @@ public class Patient
 		this.email = email;
 	}
 	
+	public String getUsername() {
+		return username;
+	}
+
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 }

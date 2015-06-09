@@ -16,8 +16,8 @@ public class PatientMethods extends BaseWebMethods {
 		try {
 
 			String SQLStr = "INSERT INTO `itp14105`.`patient` "
-					+ "(patientName, PatientSurname, patientGender, insuranceFund, AMKA, bloodType, address, country, email)"
-					+ "VALUES (?, ?, ?,  ?, ?, ?, ?, ?, ?);";
+					+ "(patientName, PatientSurname, patientGender, insuranceFund, AMKA, bloodType, address, country, email, username)"
+					+ "VALUES (?, ?, ?,  ?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
@@ -32,6 +32,8 @@ public class PatientMethods extends BaseWebMethods {
 			preparedStmnt.setString(7, patient.getAddress());
 			preparedStmnt.setString(8, patient.getCountry());
 			preparedStmnt.setString(9, patient.getEmail());
+			preparedStmnt.setString(10, patient.getUsername());
+			
 
 			db.Update(preparedStmnt); // commit
 
@@ -77,6 +79,8 @@ public class PatientMethods extends BaseWebMethods {
 				patientInstance.setBloodType(rs.getString("bloodType"));
 				patientInstance.setAddress(rs.getString("address"));
 				patientInstance.setCountry(rs.getString("country"));
+				patientInstance.setUsername(rs.getString("username"));
+				
 
 				arrList.add(patientInstance);
 			}
@@ -96,15 +100,16 @@ public class PatientMethods extends BaseWebMethods {
 	}
 
 	@WebMethod
-	public Patient returnPatientByAMKA(int AMKA) {
+	public Patient returnPatientByAMKA(int AMKA, String username) {
 		PreparedStatement preparedStmnt = null;
 		try {
 
-			String SQLStr = "SELECT * FROM `itp14105`.`patient` where AMKA = ?;";
+			String SQLStr = "SELECT * FROM `itp14105`.`patient` where AMKA = ? OR username = ?;";
 
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 
 			preparedStmnt.setInt(1, AMKA);
+			preparedStmnt.setString(2, username);
 			// Excecute the query
 			ResultSet rs = db.Query(preparedStmnt);
 			// we get only one
@@ -121,7 +126,58 @@ public class PatientMethods extends BaseWebMethods {
 				patientInstance.setBloodType(rs.getString("bloodType"));
 				patientInstance.setAddress(rs.getString("address"));
 				patientInstance.setCountry(rs.getString("country"));
+				patientInstance.setUsername(rs.getString("username"));
+				
+				return patientInstance;
+			}
 
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		} finally {
+			try {
+				if (preparedStmnt != null) {
+					preparedStmnt.close();
+				}
+			} catch (final SQLException sqlEx) {
+				sqlEx.printStackTrace();
+			}
+
+		}
+		// we didnt find anyone with this Staff id
+		return null;
+
+	}
+	
+	@WebMethod
+	public Patient returnPatientByUsername( String username) {
+		PreparedStatement preparedStmnt = null;
+		try {
+
+			String SQLStr = "SELECT * FROM `itp14105`.`patient` where  username = ?;";
+
+			preparedStmnt = db.getConn().prepareStatement(SQLStr);
+			
+			preparedStmnt.setString(1, username);
+			// Excecute the query
+			ResultSet rs = db.Query(preparedStmnt);
+			// we get only one
+			if (rs.next()) {
+				Patient patientInstance = new Patient();
+				patientInstance.setPatientID(rs.getInt("patientId"));
+				patientInstance.setPatientName(rs.getString("patientName"));
+				patientInstance.setPatientSurname(rs
+						.getString("patientSurname"));
+				patientInstance.setPatientGender(rs.getString("patientGender")
+						.charAt(0));
+				patientInstance.setInsuranceFund(rs.getString("insuranceFund"));
+				patientInstance.setAMKA(rs.getInt("AMKA"));
+				patientInstance.setBloodType(rs.getString("bloodType"));
+				patientInstance.setAddress(rs.getString("address"));
+				patientInstance.setCountry(rs.getString("country"));
+				patientInstance.setUsername(rs.getString("username"));
+				
 				return patientInstance;
 			}
 

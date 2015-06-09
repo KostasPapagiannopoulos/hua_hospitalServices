@@ -1,15 +1,33 @@
 package gr.services.huahospital;
 
+import java.io.InputStream;
+import java.io.Reader;
+import java.math.BigDecimal;
+import java.net.URL;
+import java.sql.Array;
+import java.sql.Blob;
+import java.sql.Clob;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
+import java.sql.NClob;
 import java.sql.PreparedStatement;
+import java.sql.Ref;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.RowId;
 import java.sql.SQLException;
+import java.sql.SQLWarning;
+import java.sql.SQLXML;
 import java.sql.Statement;
+import java.sql.Time;
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Map;
 
 public class Database {
 
-	private static String db_url = "jdbc:mysql://62.217.125.30:3306/itp14105";
+	private static String db_url = "jdbc:mysql://62.217.125.30:3306/itp14105?useUnicode=true&characterEncoding=utf-8";
 	private static String db_username = "itp14105";
 	private static String db_password = "$12345$";
 
@@ -84,11 +102,11 @@ public class Database {
 	
 	}
 
-	public ResultSet Query(String query) //simpleUse 
+	public ResultSet Query(String query) throws InstantiationException, IllegalAccessException, ClassNotFoundException //simpleUse 
 	{
 		try 
 		{
-			return Query(conn.createStatement(), query);
+			return Query(getConn().createStatement(), query);
 		} 
 		catch (SQLException e) 
 		{

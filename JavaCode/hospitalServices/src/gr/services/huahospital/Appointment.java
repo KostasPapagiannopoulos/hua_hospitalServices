@@ -2,6 +2,10 @@ package gr.services.huahospital;
 
 import java.sql.Time;
 import java.sql.Date;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class Appointment 
 {
@@ -10,13 +14,17 @@ public class Appointment
 	private String patientSurname;
 	private int AMKA;
 	private String insuranceFund;
-	private String infirmary;
+	private Integer clinicid;
 	private String diseaseDetails;
 	private Date appointmentDate;
+	private String strAppointmentDate;
 	private Time appointmentTime;
+	private String strAppointmentTime;	
 	private int appointmentEmergency;
 	private String rejectReasons;
 	private int appointmentState;
+	
+	
 	
 	public Appointment() 
 	{
@@ -72,14 +80,14 @@ public class Appointment
 		this.insuranceFund = insuranceFund;
 	}
 
-	public String getInfirmary() 
+	public Integer getClinicid() 
 	{
-		return infirmary;
+		return clinicid;
 	}
 
-	public void setInfirmary(String infirmary) 
+	public void setClinicid(Integer clinicid) 
 	{
-		this.infirmary = infirmary;
+		this.clinicid = clinicid;
 	}
 
 	public String getDiseaseDetails() 
@@ -140,5 +148,25 @@ public class Appointment
 	public void setAppointmentState(int appointmentState) 
 	{
 		this.appointmentState = appointmentState;
+	}
+	
+	static DateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+
+    public String getStrAppointmentDate() {    	 
+         return df.format(this.appointmentDate);        
+    }
+
+    public void setStrAppointmentDate(String strappointmentDate) throws ParseException {
+        this.appointmentDate = new java.sql.Date( df.parse(strappointmentDate).getTime());
+    }
+    
+    public String getStrAppointmentTime() 
+	{
+		return appointmentTime.toString();
+	}
+
+	public void setStrAppointmentTime(String appointmentTime) 
+	{
+		this.appointmentTime = java.sql.Time.valueOf(appointmentTime);
 	}
 }

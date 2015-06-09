@@ -6,34 +6,34 @@
 
 <table class="table table-striped">
 
-   <tr class="active">
+    <tr class="active">
 
- <th class="active" >clinicid</th>
-   <th class="active">clinicName</th>
-   <th class="active">clinicType</th>
-   <th class="active">dateFrom</th>
-   <th class="active">dateTo</th>
-   <th class="active">doctorid</th>
+        <th class="active">clinicid</th>
+        <th class="active">clinicName</th>
+        <th class="active">clinicType</th>
+        <th class="active">dateFrom</th>
+        <th class="active">dateTo</th>
+        <th class="active">doctorid</th>
 
- </tr>
+    </tr>
 
-{% for result in results %}
+    {% for result in results %}
 
-   <tr class="active">
+    <tr class="active">
 
-        <td class="active"> {{result.clinicid}} </td>
-       <td class="active"> {{result.clinicName}} </td>
-       <td class="active"> {{result.clinicType}} </td>
-        <td class="active"> {{result.dateFrom}} </td>
-        <td class="active"> {{result.dateTo}} </td>
-        <td class="active"> {{result.doctorid}} </td>
+        <td class="active"> {{result.clinicid}}</td>
+        <td class="active"> {{result.clinicName}}</td>
+        <td class="active"> {{result.clinicType}}</td>
+        <td class="active"> {{result.dateFrom}}</td>
+        <td class="active"> {{result.dateTo}}</td>
+        <td class="active"> {{result.doctorid}}</td>
 
 
-   <tr/>
+    <tr/>
 
-{% endfor %}
+    {% endfor %}
 
-   </table>
+</table>
 
 <br>
 

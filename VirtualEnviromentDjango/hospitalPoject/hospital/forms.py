@@ -1,7 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import Group
+from suds.client import Client
+from datetime import datetime, timedelta
+from django.utils.dateformat import DateFormat
 
 USER_TYPE_CHOICES = (
     ('1', 'Patient'),
@@ -52,13 +57,48 @@ class MyRegistrationForm(UserCreationForm):
 
         return user
 
-class ContactForm1(forms.Form):
-    subject = forms.CharField(max_length=100)
-    
-class ContactForm2(forms.Form):
-    sender = forms.EmailField()
 
-class ContactForm3(forms.Form):
-    message = forms.CharField(widget=forms.Textarea)
-    
-    
+
+
+EMERGENCY_CHOICES = (
+    ('1', "Κανονικό"),
+    ('2', "Επείγον"),
+)
+
+
+
+java_Clinic_services = Client('http://localhost:8080/hospitalServices/ClinicMethodsService?WSDL')
+
+class EditAppointmentForm(forms.Form):
+    dt = datetime.now() + timedelta(days=1)
+    df = DateFormat(dt)
+
+    #get clinics
+    results = java_Clinic_services.service.returnAllClinics()
+    clinic_choices = [(i.clinicid, i.clinicType + ' ('+i.clinicName + ') ' ) for i in results]
+
+    patientName = forms.CharField(label='Όνομα', max_length=100, required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
+    patientSurname = forms.CharField(label='Επώνυμο', max_length=100, required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
+    AMKA = forms.IntegerField(label='ΑΜΚΑ', required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
+    diseaseDetails = forms.CharField(label='Ποιό είναι το πρόβλημα σας', max_length=100, required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
+    clinicid = forms.ChoiceField(label='Κλινική', required=True, choices=clinic_choices)
+    insuranceFund = forms.CharField(label='Ασφάλεια', max_length=100, required=True, widget=forms.TextInput(attrs={'class':'disabled', 'readonly':'readonly'}))
+    appointmentDate = forms.DateField(label="Ημερομηνία", required=True, input_formats=['%d/%m/%Y'],
+                                      initial=df.format('d/m/Y'))
+    appointmentTime = forms.TimeField(label="Ώρα", required=True, input_formats=['%H:%M'], initial=df.format('H:i'))
+    appointmentEmergency = forms.ChoiceField(label='Είδος Ραντεβού', required=False, choices=EMERGENCY_CHOICES, widget=forms.Select(attrs={'disabled':'disabled', 'readonly':'readonly'}))
+
+    #with the following code we set the initial values from the 'patient' argument
+    def __init__(self, *args, **kwargs):
+        appointment = kwargs.pop('appointment')
+        super(EditAppointmentForm, self).__init__(*args, **kwargs)
+        self.fields['patientName'].initial=appointment.patientName
+        self.fields['patientSurname'].initial=appointment.patientSurname
+        self.fields['AMKA'].initial=appointment.AMKA
+        self.fields['insuranceFund'].initial=appointment.insuranceFund
+        self.fields['diseaseDetails'].initial=appointment.diseaseDetails
+        self.fields['clinicid'].initial=appointment.clinicid
+        self.fields['appointmentDate'].initial=appointment.appointmentDate #DateFormat(datetime.strptime(appointment.appointmentDate, 'd/m/Y')).format('d/m/Y')
+        self.fields['appointmentTime'].initial=appointment.appointmentTime
+        self.fields['appointmentEmergency'].initial=appointment.appointmentEmergency
+

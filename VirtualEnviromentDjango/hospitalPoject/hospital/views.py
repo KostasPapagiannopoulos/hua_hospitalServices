@@ -1,14 +1,21 @@
+import urllib2
+import base64
+import json
+
 from django.http import HttpResponse
 from django.shortcuts import render
 from suds.client import Client
-from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
-import urllib2, base64, json
-from forms import MyRegistrationForm
-from forms import USER_TYPE_CHOICES
-from django.contrib.auth.decorators import login_required
+from forms import MyRegistrationForm, EditAppointmentForm
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import auth
+
+java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
+java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffMethodsService?WSDL')
+soap_client_ClinicServices = Client('http://localhost:8080/hospitalServices/ClinicMethodsService?WSDL')
+java_Appointment_Client = Client('http://localhost:8080/hospitalServices/AppointmentMethodsService?WSDL')
+
 
 def index(request):
     return HttpResponse("Rango says Rango")
@@ -43,7 +50,7 @@ def userExists(emp_no):
 def login(request):
     c = {}
     c.update(csrf(request))
-    return render(request,'login.html', c)
+    return render(request, 'login.html', c)
 
 
 def auth_view(request):
@@ -59,24 +66,24 @@ def auth_view(request):
 
 
 def loggedin(request):
-    return render(request,'loggedin.html',
-                              {'full_name': request.user.username, 'auth': request.user.is_authenticated})
+    return render(request, 'loggedin.html',
+                  {'full_name': request.user.username, 'auth': request.user.is_authenticated})
 
 
 def invalid_login(request):
-    return render(request,'invalid_login.html')
+    return render(request, 'invalid_login.html')
 
 
 def logout(request):
     auth.logout(request)
-    return render(request,'logout.html')
+    return render(request, 'logout.html')
 
 
 def register_user(request):
     if request.method == 'POST':
         form = MyRegistrationForm(request.POST)
         if form.is_valid():
-            if not(form.cleaned_data['user_type'] == 'Patient'):
+            if not (form.cleaned_data['user_type'] == 'Patient'):
                 # if its a patient, we dont need to check his username
                 response = java_insertUser(form)
             else:
@@ -90,7 +97,7 @@ def register_user(request):
                 form.save()
                 return HttpResponseRedirect('/accounts/register_success')
             else:
-                 return HttpResponseRedirect('/accounts/register_failed')
+                return HttpResponseRedirect('/accounts/register_failed')
     else:
         form = MyRegistrationForm()
     args = {}
@@ -98,10 +105,9 @@ def register_user(request):
 
     args['form'] = form
 
-    return render(request,'register.html', args)
+    return render(request, 'register.html', args)
 
 
-java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
 def java_insertUser(form):
     patient = java_Patient_Clinet.factory.create('patient')
     patient.patientName = form.cleaned_data['first_name']
@@ -116,9 +122,7 @@ def java_insertUser(form):
     return java_Patient_Clinet.service.insertPatient(patient) != "Error"
 
 
-java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffMethodsService?WSDL')
 def java_insertStaff(form):
-
     hospitalstaff = java_Staff_Client.factory.create('hospitalStaff')
 
     hospitalstaff.firstName = form.cleaned_data['first_name']
@@ -131,41 +135,116 @@ def java_insertStaff(form):
     return java_Staff_Client.service.insertStaff(hospitalstaff) != "Error"
 
 
-
 def register_success(request):
-    return render(request,'register_success.html')
+    return render(request, 'register_success.html')
 
 
 def register_failed(request):
-    return render(request,'register_failed.html')
+    return render(request, 'register_failed.html')
 
 
 soap_client_PatientServices = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
 
-@login_required
-def showpatients (request):
 
-   results = soap_client_PatientServices.service.returnAllPatients()
-   context = { 'results':results, }
-   return render(request, 'allpatients.html', context)
-
-
-soap_client_ClinicServices = Client('http://localhost:8080/hospitalServices/ClinicMethodsService?WSDL')
-
-def clinics (request):
-   results = soap_client_ClinicServices.service.returnAllClinics()
-   context = { 'results':results, }
-   return render(request, 'allclinics.html', context)
+def user_in_patient_group(user):
+    if user:
+        return user.groups.filter(name='patient').count() != 0
+    return False
 
 
-def doctors (request):
-   results = soap_client_ClinicServices.service.returnAllDoctors()
-   context = { 'results':results, }
-   return render(request, 'alldoctors.html', context)
+def user_in_doctor_group(user):
+    if user:
+        return user.groups.filter(name='doctor').count() != 0
+    return False
 
 
-@login_required
-def duty (request, doctorid):
-   results = soap_client_ClinicServices.service.returnAllClinicDuty(doctorid)
-   context = { 'results':results, }
-   return render(request, 'allduty.html', context)
+def user_in_staff_group(user):
+    if user:
+        return user.groups.filter(name='doctor').count() != 0
+    return False
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_staff_group, login_url='/accounts/login/')
+def showpatients(request):
+    results = soap_client_PatientServices.service.returnAllPatients()
+    context = {'results': results, }
+    return render(request, 'allpatients.html', context)
+
+
+def clinics(request):
+    results = soap_client_ClinicServices.service.returnAllClinics()
+    context = {'results': results, }
+    return render(request, 'allclinics.html', context)
+
+
+def doctors(request):
+    results = soap_client_ClinicServices.service.returnAllDoctors()
+    context = {'results': results, }
+    return render(request, 'alldoctors.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
+def duty(request, doctorid):
+    results = soap_client_ClinicServices.service.returnAllClinicDuty(doctorid)
+    context = {'results': results, }
+    return render(request, 'allduty.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
+def appointments(request, doctorid):
+    results = soap_client_ClinicServices.service.returnDoctorAppointments(doctorid)
+    context = {'results': results, }
+    return render(request, 'alldoctorappoitments.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
+def home_doctor(request):
+    appointments = soap_client_ClinicServices.service.returnDoctorAppointments(request.user.username)
+    duty = soap_client_ClinicServices.service.returnAllClinicDuty(request.user.username)
+    doctor = java_Staff_Client.service.returnStaffByStaffId(request.user.username)
+    context = {'appointments': appointments, 'duty': duty, 'doctor': doctor}
+    return render(request, 'doctor_home.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_staff_group, login_url='/accounts/login/')
+def pendingappointments(request):
+    appointments = java_Appointment_Client.service.returnAllAppointments()
+    context = {'appointments': appointments}
+    return render(request, 'pendingappointments.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_staff_group, login_url='/accounts/login/')
+def appointment_edit(request, appointmentID):
+    currentAppointment = java_Appointment_Client.service.returnAppointmentById(appointmentID)
+
+    if currentAppointment is None:
+        return HttpResponse("Appointment Not Found!")
+    if request.method == 'GET':
+        form = EditAppointmentForm(appointment=currentAppointment)
+    else:
+        appointment = java_Appointment_Client.factory.create('appointment')
+
+        form = EditAppointmentForm(request.POST, appointment=currentAppointment)
+        if form.is_valid():
+            appointment.patientName = form.cleaned_data['patientName']
+            appointment.patientSurname = form.cleaned_data['patientSurname']
+            appointment.AMKA = form.cleaned_data['AMKA']
+            appointment.insuranceFund = form.cleaned_data['insuranceFund']
+            appointment.clinicid = form.cleaned_data['clinicid']
+            appointment.diseaseDetails = form.cleaned_data['diseaseDetails']
+            appointment.strAppointmentDate = form.cleaned_data['appointmentDate']
+            appointment.strAppointmentTime = form.cleaned_data['appointmentTime']
+            appointment.appointmentEmergency = form.cleaned_data['appointmentEmergency']
+            result = java_Appointment_Client.service.staffUpdatesAppointment(appointment)
+            if result:
+                HttpResponseRedirect('/hospital/pendingappointments')
+            else:
+                return HttpResponse("Appointment Not Updated")
+    return render(request, 'appointment.html',
+                  {'form': form, 'action_url': '/hospital/appointment/' + appointmentID})

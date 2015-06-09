@@ -2,26 +2,34 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="patient" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="appointmentEmergency" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="true" key="wrap"/>
-		<item value="true" key="wholeword"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="appointmentEmergency"/>
+			<item value="appointmetEmergency"/>
+			<item value="appointmetTime"/>
+			<item value="infirmary"/>
+			<item value="Infirmary"/>
 			<item value="hospitalStaff"/>
 			<item value="java.sql.Date"/>
 			<item value="java.sql"/>
-			<item value="conn"/>
 		</list>
 		<list key="replacehistory">
+			<item value="appointmentEmergency"/>
+			<item value="appointmentTime"/>
+			<item value="clinicid"/>
+			<item value="Clinicid"/>
 			<item value="patient"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="315" key="DIALOG_X_ORIGIN"/>
-		<item value="396" key="DIALOG_Y_ORIGIN"/>
+		<item value="387" key="DIALOG_HEIGHT"/>
+		<item value="1203" key="DIALOG_X_ORIGIN"/>
+		<item value="391" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
