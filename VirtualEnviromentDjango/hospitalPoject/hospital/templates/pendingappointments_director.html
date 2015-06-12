@@ -21,7 +21,12 @@
 
     {% for result in appointments %}
 
+    {% if result.appointmentState == 10 %}
+    <tr class="active">
+        {% else %}
     <tr class="">
+        {% endif%}
+
         <td class=""> {{result.appointmentID}}</td>
         <td class=""> {{result.patientName}} {{result.patientSurname}}</td>
         <td class=""> {{result.AMKA}}</td>
@@ -31,8 +36,11 @@
         <td class=""> {{result.rejectReasons}}</td>
 
         <td class="">
-            {% if result.appointmentState == 1%}
+            {% if result.appointmentState == 2%}
             <a href="/hospital/appointment_by_director/{{result.appointmentID}}">Επεξεργασία</a>
+            {% elif result.appointmentState == 11 %}
+            <a href="/hospital/appointment_edit_by_director_expedition/{{result.appointmentID}}">Επίσπευση</a>
+
             {% else %}
             Είναι στο status {{result.appointmentState}}
             {% endif%}

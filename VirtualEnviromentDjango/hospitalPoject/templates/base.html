@@ -41,8 +41,11 @@
                 <li class="active"><a href="/hospital/doctors">Doctors</a></li>
                 <li><a href="/hospital/clinics">Clinics</a></li>
                 <li><a href="/hospital/showpatients">Patients</a></li>
+                <li><a href="/pat/appointment/new">Θέλω ραντεβού</a></li>
+
                 <li class="dropdown">
-                    <a href="/hospital/home_doctor" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Επιλογές
+                    <a href="/hospital/home_doctor" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false">Επιλογές
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/hospital/pendingappointments">Όλα τα ραντεβού</a></li>
@@ -55,21 +58,32 @@
 
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="/hospital/home_doctor" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false">Για τον ασθενή
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/pat/appointment/new">Θέλω ραντεβού</a></li>
+                        <li><a href="/pat/appointment/all">Τα ραντεβού μου</a></li>
+                    </ul>
+                </li>
+
+
             </ul>
 
 
+            <ul class="nav navbar-nav nav pull-right">
 
-                <ul class="nav navbar-nav nav pull-right">
+                {% if user.is_authenticated %}
+                <li class="navbar-text">Welcome, {{ user.username }}!</li>
+                <li><a href="/accounts/logout/">Logout</a></li>
+                {% else %}
 
-                    {% if user.is_authenticated %}
-                    <li class="navbar-text">Welcome, {{ user.username }}!</li>
-                    <li><a href="/accounts/logout/">Logout</a></li>
-                    {% else %}
-
-                    <li><a href="/pat/register/">Νέος ασθενής</a></li>
-                    <li><a href="/pat/login/">Είσοδος</a></li>
-                    <li>
-                         <a href="/accounts/login/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ιατρικό Προσωπικό
+                <li><a href="/pat/register/">Νέος ασθενής</a></li>
+                <li><a href="/pat/login/">Είσοδος</a></li>
+                <li>
+                    <a href="/accounts/login/" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false">Ιατρικό Προσωπικό
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/accounts/register/">Εγγραφή</a></li>
@@ -77,9 +91,9 @@
                     </ul>
 
 
-                    <li></li>
-                    {% endif %}
-                </ul>
+                <li></li>
+                {% endif %}
+            </ul>
 
 
             <!--/.nav-collapse -->

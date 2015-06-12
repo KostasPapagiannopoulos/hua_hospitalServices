@@ -21,6 +21,11 @@ GENDER_CHOICES = (
     ('F', 'Female'),
 )
 
+ACCEPT_CHOICES = (
+    (True, 'Αποδοχή'),
+    (False, 'Απόρριψη'),
+)
+
 
 class MyRegistrationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -54,7 +59,7 @@ class MyRegistrationForm(UserCreationForm):
         targetgroup = 'staff';
         if self.cleaned_data['user_type'] == '1':
             targetgroup = 'director'
-        if self.cleaned_data['user_type'] == '2':
+        elif self.cleaned_data['user_type'] == '2':
             targetgroup = 'staff'
         else:
             targetgroup = 'doctor'
@@ -116,6 +121,7 @@ class EditAppointmentForm(forms.Form):
         self.fields['appointmentTime'].initial = re.sub('\:00', '', appointment.strAppointmentTime)
         self.fields['appointmentEmergency'].initial = appointment.appointmentEmergency
 
+
 class EditAppointmentForm_by_director(forms.Form):
     dt = datetime.now() + timedelta(days=1)
     df = DateFormat(dt)
@@ -156,3 +162,50 @@ class EditAppointmentForm_by_director(forms.Form):
             datetime.strptime(appointment.strAppointmentDate, '%Y-%m-%d')).format('d/m/Y')
         self.fields['appointmentTime'].initial = re.sub('\:00', '', appointment.strAppointmentTime)
         self.fields['appointmentEmergency'].initial = appointment.appointmentEmergency
+
+
+class EditExpeditionFormByDirector(forms.Form):
+    dt = datetime.now() + timedelta(days=1)
+    df = DateFormat(dt)
+
+    # get clinics
+    results = java_Clinic_services.service.returnAllClinics()
+    clinic_choices = [(i.clinicid, i.clinicType + ' (' + i.clinicName + ') ') for i in results]
+
+    patientName = forms.CharField(label='Όνομα', max_length=100, required=True,
+                                  widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    patientSurname = forms.CharField(label='Επώνυμο', max_length=100, required=True,
+                                     widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    AMKA = forms.IntegerField(label='ΑΜΚΑ', required=True,
+                              widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    diseaseDetails = forms.CharField(label='Ποιό είναι το πρόβλημα σας', max_length=100, required=True,
+                                     widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    clinicid = forms.ChoiceField(label='Κλινική', required=True, choices=clinic_choices,
+                                 widget=forms.Select(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    insuranceFund = forms.CharField(label='Ασφάλεια', max_length=100, required=True,
+                                    widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    appointmentDate = forms.DateField(label="Ημερομηνία", required=True, input_formats=['%d/%m/%Y'],
+                                      initial=df.format('d/m/Y'))
+    appointmentTime = forms.TimeField(label="Ώρα", required=True, input_formats=['%H:%M'], initial=df.format('H:i'))
+    appointmentEmergency = forms.ChoiceField(label='Είδος Ραντεβού', required=False, choices=EMERGENCY_CHOICES,
+                                             widget=forms.Select(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    rejectReasons = forms.CharField(label='Αιτιολόγηση', max_length=200, required=True)
+    expeditionAccepted = forms.ChoiceField(label='Αποδοχή Επίσπευσης', required=False, choices=ACCEPT_CHOICES,
+                                             )
+
+    # with the following code we set the initial values from the 'patient' argument
+    def __init__(self, *args, **kwargs):
+        appointment = kwargs.pop('appointment')
+        super(EditExpeditionFormByDirector, self).__init__(*args, **kwargs)
+        self.fields['patientName'].initial = appointment.patientName
+        self.fields['patientSurname'].initial = appointment.patientSurname
+        self.fields['AMKA'].initial = appointment.AMKA
+        self.fields['insuranceFund'].initial = appointment.insuranceFund
+        self.fields['diseaseDetails'].initial = appointment.diseaseDetails
+        self.fields['clinicid'].initial = appointment.clinicid
+        self.fields['appointmentDate'].initial = DateFormat(
+            datetime.strptime(appointment.strAppointmentDate, '%Y-%m-%d')).format('d/m/Y')
+        self.fields['appointmentTime'].initial = re.sub('\:00', '', appointment.strAppointmentTime)
+        self.fields['appointmentEmergency'].initial = appointment.appointmentEmergency
+        self.fields['rejectReasons'].initial = appointment.rejectReasons
+

@@ -17,6 +17,8 @@ urlpatterns = patterns('',
 
         (r'^appointment/new$', views.new_appointment),
         (r'^appointment/all$', views.all_appointments),
+        (r'^appointment_edit_by_user/(?P<appointmentID>[0-9]+)$', views.appointment_edit_by_user),
+
 
 
     )

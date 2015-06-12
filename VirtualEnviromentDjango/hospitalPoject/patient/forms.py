@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#hello
+
 from django import forms
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.forms import UserCreationForm
 from datetime import datetime, timedelta
 from django.utils.dateformat import DateFormat
 from suds.client import Client
+import re
 
 GENDER_CHOICES = (
     ('', ''),
@@ -114,4 +115,5 @@ class NewAppointmentForm(forms.Form):
         self.fields['patientSurname'].initial=patient.patientSurname
         self.fields['AMKA'].initial=patient.AMKA
         self.fields['insuranceFund'].initial=patient.insuranceFund
+
 
