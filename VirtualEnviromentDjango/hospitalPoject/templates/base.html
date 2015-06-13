@@ -43,10 +43,26 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/" title="Χαροκόπειο Νοσοκομείο-Αρχική">Χαροκόπειο Νοσοκομείο</a>
-          
         </div>
         <a class="navbar-brand" href="/how" title="Πρόσβαση στο Νοσοκομείο">Πρόσβαση</a>
         <div class="navbar-collapse collapse">
+        	
+        	{% if user.is_authenticated %}
+		    <ul class="nav navbar-nav navbar-right"> 
+        <li class="dropdown">
+          <a tabindex="0" class="dropdown-toggle" data-toggle="dropdown" href="#">Επιλογές Πολίτη
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li>
+            <a tabindex="0" data-toggle="dropdown">Αίτηση Νέου Ραντεβού</a>
+            <a tabindex="0" data-toggle="dropdown">Τα Ραντεβού μου</a>
+          </ul>
+		    {% endif %}
+		    </div>
+		    <div class="navbar‐collapse collapse">
+		    <ul class="nav navbar‐nav navbar‐right">
+        	
+        	
           <ul class="nav navbar-nav navbar-right"> 
         <li class="dropdown">
           <a tabindex="0" class="dropdown-toggle" data-toggle="dropdown" href="#">Ηλεκτρονικές Υπηρεσίες
