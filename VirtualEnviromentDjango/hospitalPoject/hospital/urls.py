@@ -17,6 +17,7 @@ urlpatterns = patterns('',
         url(r'^pendingappointments_director/', views.appointments_director,),
         url(r'^appointment_by_director/(?P<appointmentID>[0-9]+)', views.appointment_edit_by_director,),
         url(r'^appointment_edit_by_director_expedition/(?P<appointmentID>[0-9]+)', views.appointment_edit_by_director_expedition,),
+        url(r'^doctor_edit_app/(?P<appointmentID>[0-9]+)', views.doctor_edit_app,),
 
 
 

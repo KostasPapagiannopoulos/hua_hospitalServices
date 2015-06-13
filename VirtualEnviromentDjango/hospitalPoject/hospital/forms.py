@@ -34,6 +34,7 @@ class MyRegistrationForm(UserCreationForm):
     user_type = forms.ChoiceField(choices=USER_TYPE_CHOICES)
     gender = forms.ChoiceField(choices=GENDER_CHOICES)
     amka = forms.IntegerField(required=True)
+    specialty = forms.CharField(required=False)
 
     class Meta:
         model = User
@@ -42,6 +43,7 @@ class MyRegistrationForm(UserCreationForm):
                   'last_name',
                   'gender',
                   'amka',
+                  'specialty',
                   'username',
                   'email',
                   'password1',
@@ -208,4 +210,35 @@ class EditExpeditionFormByDirector(forms.Form):
         self.fields['appointmentTime'].initial = re.sub('\:00', '', appointment.strAppointmentTime)
         self.fields['appointmentEmergency'].initial = appointment.appointmentEmergency
         self.fields['rejectReasons'].initial = appointment.rejectReasons
+
+
+
+class DoctorEditApp(forms.Form):
+    dt = datetime.now() + timedelta(days=1)
+    df = DateFormat(dt)
+
+    patientName = forms.CharField(label='Όνομα', max_length=100, required=True,
+                                  widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    patientSurname = forms.CharField(label='Επώνυμο', max_length=100, required=True,
+                                     widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    AMKA = forms.IntegerField(label='ΑΜΚΑ', required=True,
+                              widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    diseaseDetails = forms.CharField(label='Ο ασθενής είπε', max_length=100, required=True,
+                                     widget=forms.TextInput(attrs={'class': 'disabled', 'readonly': 'readonly'}))
+    problem = forms.CharField(label='Πρόβλημα', max_length=500, required=True)
+    subjective = forms.CharField(label='Υποκειμενικά', max_length=500, required=True)
+    objective = forms.CharField(label='Αντικειμενικά', max_length=500, required=True)
+    assessment = forms.CharField(label='Εκτίμηση', max_length=500, required=True)
+    plan = forms.CharField(label='Αντιμετώπιση', max_length=500, required=True)
+
+    # with the following code we set the initial values from the 'patient' argument
+    def __init__(self, *args, **kwargs):
+        appointment = kwargs.pop('appointment')
+        super(DoctorEditApp, self).__init__(*args, **kwargs)
+        self.fields['patientName'].initial = appointment.patientName
+        self.fields['patientSurname'].initial = appointment.patientSurname
+        self.fields['AMKA'].initial = appointment.AMKA
+        self.fields['diseaseDetails'].initial = appointment.diseaseDetails
+        self.fields['subjective'].initial = appointment.diseaseDetails
+
 

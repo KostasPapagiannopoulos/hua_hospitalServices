@@ -7,22 +7,22 @@
 <h2>Οι υπηρεσίες μου </h2>
 
 <table class="table table-striped">
-    <tr class="active">
-        <th class="active">clinicid</th>
-        <th class="active">clinicName</th>
-        <th class="active">clinicType</th>
-        <th class="active">dateFrom</th>
-        <th class="active">dateTo</th>
-        <th class="active">doctorid</th>
+    <tr class="">
+
+        <th class="">Κλινική</th>
+        <th class="">Είδος</th>
+        <th class="">Υπηρεσία από</th>
+        <th class="">έως</th>
+
     </tr>
     {% for result in duty %}
-    <tr class="active">
-        <td class="active"> {{result.clinicid}}</td>
-        <td class="active"> {{result.clinicName}}</td>
-        <td class="active"> {{result.clinicType}}</td>
-        <td class="active"> {{result.dateFrom}}</td>
-        <td class="active"> {{result.dateTo}}</td>
-        <td class="active"> {{result.doctorid}}</td>
+    <tr class="">
+
+        <td class=""> {{result.clinicName}}</td>
+        <td class=""> {{result.clinicType}}</td>
+        <td class=""> {{result.dateFrom | date:"d/m/Y"}}</td>
+        <td class=""> {{result.dateTo | date:"d/m/Y"}}</td>
+
     <tr/>
     {% endfor %}
 </table>
@@ -30,24 +30,27 @@
 <h2>Τα ραντεβού μου</h2>
 
 <table class="table table-striped">
-    <tr class="active">
-        <th class="active">ID</th>
-        <th class="active">Κλινική</th>
-        <th class="active">Ονομ/μο</th>
-        <th class="active">ΑΜΚΑ</th>
-        <th class="active">Πρόβλημα</th>
-        <th class="active">Ημ/νία</th>
-        <th class="active">Επείγον</th>
+    <tr class="">
+        <th class="">ID</th>
+        <th class="">Κλινική</th>
+        <th class="">Ονομ/μο</th>
+        <th class="">ΑΜΚΑ</th>
+        <th class="">Πρόβλημα</th>
+        <th class="">Ημ/νία</th>
+        <th class="">Επείγον</th>
+        <th class="">Επιλογές</th>
+
     </tr>
     {% for result in appointments %}
-    <tr class="active">
-        <td class="active"> {{result.appointmentID}}</td>
-        <td class="active"> {{result.clinicName}}</td>
-        <td class="active"> {{result.patientName}} {{result.patientSurname}}</td>
-        <td class="active"> {{result.AMKA}}</td>
-        <td class="active"> {{result.diseaseDetails}}</td>
-        <td class="active"> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
-        <td class="active"> {{result.appointmentEmergency}}</td>
+    <tr class="">
+        <td class=""> {{result.appointmentID}}</td>
+        <td class=""> {{result.clinicName}}</td>
+        <td class=""> {{result.patientName}} {{result.patientSurname}}</td>
+        <td class=""> {{result.AMKA}}</td>
+        <td class=""> {{result.diseaseDetails}}</td>
+        <td class=""> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
+        <td class=""> {{result.appointmentEmergency}}</td>
+        <td class=""><a href="/hospital/doctor_edit_app/{{result.appointmentID}}">Επεξεργασία</a></td>
     <tr/>
     {% endfor %}
 </table>

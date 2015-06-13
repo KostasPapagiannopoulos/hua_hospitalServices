@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="appointmentEmergency" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="doctors"/>
 			<item value="appointmentEmergency"/>
 			<item value="appointmetEmergency"/>
 			<item value="appointmetTime"/>
@@ -15,7 +16,6 @@
 			<item value="Infirmary"/>
 			<item value="hospitalStaff"/>
 			<item value="java.sql.Date"/>
-			<item value="java.sql"/>
 		</list>
 		<list key="replacehistory">
 			<item value="appointmentEmergency"/>
