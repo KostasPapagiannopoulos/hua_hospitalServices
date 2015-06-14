@@ -10,6 +10,16 @@ public class HospitalStaff {
 	private Date birthDate;
 	private int staffType;
 	private String emp_no;
+	private String specialty;
+	
+
+	public String getSpecialty() {
+		return specialty;
+	}
+
+	public void setSpecialty(String specialty) {
+		this.specialty = specialty;
+	}
 
 	public HospitalStaff() 
 	{

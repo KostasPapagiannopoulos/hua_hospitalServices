@@ -249,4 +249,55 @@ public class AppointmentMethods extends BaseWebMethods {
 		appointmentInstance.setAppointmentState(rs.getInt("appointmentState"));
 		return appointmentInstance;
 	}
+
+	public boolean patientRequestExpeditionAppointment(int appointmentID) {
+		try {
+
+			String SQLStr = "UPDATE `itp14105`.`appointment` "
+					+ "SET appointmentState=? "
+					+ "WHERE appointmentID = ?;";
+			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
+					SQLStr);
+
+			preparedStmnt.setInt(1, 11);
+			preparedStmnt.setInt(2, appointmentID);
+			
+
+			db.Update(preparedStmnt); // commit
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
+	}
+	
+	public boolean directorAcceptExpeditionAppointment(Appointment appointment, boolean expeditionAccepted ) {
+		try {
+
+			String SQLStr = "UPDATE `itp14105`.`appointment` "
+					+ "SET appointmentDate=?, appointmentTime=?, appointmentState=? "
+					+ "WHERE appointmentID = ?;";
+			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
+					SQLStr);
+
+			preparedStmnt.setDate(1, appointment.getAppointmentDate());
+			preparedStmnt.setTime(2, appointment.getAppointmentTime());			
+			preparedStmnt.setInt(3, expeditionAccepted ? 20 : 21);
+			preparedStmnt.setInt(4, appointment.getAppointmentID());
+			
+
+			db.Update(preparedStmnt); // commit
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
+	}
+
+
+
 }

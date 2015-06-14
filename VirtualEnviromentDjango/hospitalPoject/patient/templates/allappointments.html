@@ -15,15 +15,15 @@
 <table class="table table-striped">
 
     <tr class="active">
-        <th class="active"> ID</th>
-        <th class="active"> insuranceFund</th>
-        <th class="active"> clinicid</th>
-        <th class="active"> diseaseDetails</th>
-        <th class="active"> strAppointmentDate</th>
-        <th class="active"> strAppointmentTime</th>
-        <th class="active"> appointmentEmergency</th>
-        <th class="active"> rejectReasons</th>
-        <th class="active"> appointmentState</th>
+        <th class="active"> Κωδικός</th>
+        <th class="active"> Ταμείο Αφάλισης</th>
+        <th class="active"> Κωδικός Κλινικής</th>
+        <th class="active"> Λεπτομέρειες Ασθένιας</th>
+        <th class="active"> Ημερομηνία Ραντεβού</th>
+        <th class="active"> Ώρα Ραντεβού</th>
+        <th class="active"> Σοβαρότητα Ραντεβού</th>
+        <th class="active"> Λόγοι Απόρριψης - Έκτακτο Ραντεβού</th>
+        <th class="active"> Κατάσταση Ραντεβού</th>
 
     </tr>
 
@@ -42,7 +42,15 @@
         <td class=""> {{result.strAppointmentTime}}</td>
         <td class=""> {{result.appointmentEmergency}}</td>
         <td class="">{{result.rejectReasons}}</td>
-        <td class=""> {{result.appointmentState}}</td>
+        <td class="">
+            {% if result.appointmentState == 10 %}
+            <a href="/hospital/appointment_edit_by_user/{{result.appointmentID}}">Θέλω επίσπευση του ραντεβού μου</a>
+            {% else %}
+            Είναι στο status {{result.appointmentState}}
+            {% endif%}
+
+
+        </td>
 
 
     <tr/>

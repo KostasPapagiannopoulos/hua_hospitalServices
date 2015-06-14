@@ -55,9 +55,9 @@ public class ClinicMethods extends BaseWebMethods {
 			String SQLStr = ""
 					+ "SELECT * "
 					+ "FROM itp14105.doctors "
-					+ "JOIN itp14105.clinicDoctor ON clinicDoctor.doctorid = doctors.doctorid "
+					+ "JOIN itp14105.clinicDoctor ON clinicDoctor.doctorid = hospitalstaff.emp_no "
 					+ "JOIN itp14105.clinics   ON clinicDoctor.clinicid = clinics.clinicid "
-					+ "WHERE doctors.doctorid = ? " + ";";
+					+ "WHERE hospitalstaff.emp_no = ? " + ";";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 			preparedStmnt.setString(1, String.valueOf(doctorid));
 
@@ -68,8 +68,8 @@ public class ClinicMethods extends BaseWebMethods {
 				temp.setClinicName(rs.getString("clinicName"));
 				temp.setClinicType(rs.getString("clinicType"));
 				temp.setDateFrom(rs.getDate("dateFrom"));
-				temp.setDateFrom(rs.getDate("dateTo"));
-				temp.setDoctorid(rs.getInt("doctorid"));
+				temp.setDateTo(rs.getDate("dateTo"));
+				temp.setDoctorid(rs.getInt("emp_no"));
 				arrList.add(temp);
 			}
 			return arrList;
@@ -94,14 +94,14 @@ public class ClinicMethods extends BaseWebMethods {
 		try {
 			ArrayList<Doctor> arrList = new ArrayList<Doctor>();
 
-			String SQLStr = "SELECT * FROM `itp14105`.`doctors`;";
+			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 			ResultSet rs = db.Query(preparedStmnt);
 			while (rs.next()) {
 				Doctor temp = new Doctor();
-				temp.setDoctorid(rs.getInt("doctorid"));
-				temp.setName(rs.getString("name"));
-				temp.setSurname(rs.getString("surname"));
+				temp.setDoctorid(rs.getInt("emp_no"));
+				temp.setName(rs.getString("firstName"));
+				temp.setSurname(rs.getString("lastName"));
 				temp.setSpecialty(rs.getString("specialty"));
 				arrList.add(temp);
 			}
@@ -164,6 +164,37 @@ public class ClinicMethods extends BaseWebMethods {
 				sqlEx.printStackTrace();
 			}
 		}
+	}
+
+	@WebMethod
+	public boolean doctorInsertAppointment(Assessment assessment) {
+		try {
+
+			String SQLStr = "INSERT INTO `itp14105`.`doctorAssessment`"
+					+ "(appointmentId, doctorId, problem, subjective, objective, assessment, plan)"
+					+ "VALUES ( ?, ?, ?, ?, ?, ?, ?, )  "
+					;
+			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
+					SQLStr);
+
+			preparedStmnt.setInt(1, assessment.getAssessmentId());
+			preparedStmnt.setInt(2, assessment.getAppointmentId());
+			preparedStmnt.setInt(3, assessment.getDoctorId());
+			preparedStmnt.setString(4, assessment.getProblem());
+			preparedStmnt.setString(5, assessment.getSubjective());
+			preparedStmnt.setString(6, assessment.getObjective());
+			preparedStmnt.setString(7, assessment.getAssessment());
+			preparedStmnt.setString(8, assessment.getPlan());
+			
+
+			db.Update(preparedStmnt); // commit
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
 	}
 
 }

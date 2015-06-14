@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2af226-787f-451b-95d6-7321daf12cca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\repository\http___download_eclipse_org_recommenders_models_luna_\org\eclipse\recommenders\index\0.0.0-SNAPSHOT\_remote.repositories" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\repository\http___download_eclipse_org_recommenders_models_luna_\org\eclipse\recommenders\index\0.0.0-SNAPSHOT\index-0.0.0-20140605.014212-1.zip" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\repository\http___download_eclipse_org_recommenders_models_luna_\org\eclipse\recommenders\index\0.0.0-SNAPSHOT\maven-metadata-models.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\GitHub\hua_hospitalServices\JavaCode\.recommenders\repository\http___download_eclipse_org_recommenders_models_luna_\org\eclipse\recommenders\index\0.0.0-SNAPSHOT\resolver-status.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/4142542217.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/4142542217.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/AppointmentMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/AppointmentMethods.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaff.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaff.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaffMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/HospitalStaffMethods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.indexes/e4/eb/5e/2e/history.index" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.projects/hospitalServices/.indexes/e4/eb/5e/2e/history.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/ClinicMethods.java" afterPath="$PROJECT_DIR$/JavaCode/hospitalServices/src/gr/services/huahospital/ClinicMethods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/Servers/GlassFish 4 at localhost [domain1].server" afterPath="$PROJECT_DIR$/JavaCode/Servers/GlassFish 4 at localhost [domain1].server" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.internet.cache/cache.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.wst.internet.cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" afterPath="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/JavaCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
@@ -37,23 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="68" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="68" />
-              <folding>
-                <element signature="e#46#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.034483">
-              <caret line="291" column="86" selection-start-line="291" selection-start-column="66" selection-end-line="291" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.62643677">
+              <caret line="134" column="58" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -61,52 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="74" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pendingappointments_director.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46028882">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pendingappointments.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.192307">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <folding />
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+              <folding>
+                <element signature="e#46#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,28 +73,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.448276">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding>
-                <element signature="e#46#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appointment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -170,7 +105,6 @@
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/static/bootstrap/css/bootstrap-fluid-adj.css" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/css/main.css" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/bootstrap/css/bootstrap-fluid-adj.css" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/login.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/register_pat.html" />
@@ -184,16 +118,17 @@
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/alldoctorappoitments.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/doctor_home.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/allduty.html" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/forms.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py" />
+        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py" />
         <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html" />
-        <option value="$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html" />
       </list>
     </option>
   </component>
@@ -229,6 +164,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -320,7 +256,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VirtualEnviromentDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VirtualEnviromentDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VirtualEnviromentDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hua_hospitalServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VirtualEnviromentDjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hospitalPoject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,14 +377,9 @@
               <option name="myItemId" value="hospital" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,6 +390,22 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="257" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="286" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="288" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="962" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="280" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="279" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="280" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="954" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -549,8 +592,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20103627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -585,17 +628,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py</url>
-          <line>60</line>
+          <line>62</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
-          <line>96</line>
+          <line>97</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -603,8 +646,13 @@
           <line>75</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py</url>
+          <line>352</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="60" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -747,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -828,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="46" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,14 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/templates/allappointments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5821229">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -851,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.23077">
           <caret line="39" column="8" selection-start-line="6" selection-start-column="0" selection-end-line="39" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,23 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.884615">
           <caret line="35" column="8" selection-start-line="5" selection-start-column="0" selection-end-line="35" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32032302">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0">
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-          <folding>
-            <element signature="e#53#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,14 +918,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33275864">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospitalPoject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/templates/allappointments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.172414">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+          <folding>
+            <element signature="e#46#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5275862">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/doctor_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82258064">
+          <caret line="52" column="55" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -931,71 +1021,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.448276">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
           <folding>
             <element signature="e#46#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/appointment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="48" column="94" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/patient/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="68" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="68" />
-          <folding>
-            <element signature="e#46#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="74" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.192307">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.034483">
-          <caret line="291" column="86" selection-start-line="291" selection-start-column="66" selection-end-line="291" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.62643677">
+          <caret line="134" column="58" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="58" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VirtualEnviromentDjango/hospitalPoject/hospital/templates/pendingappointments_director.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46028882">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

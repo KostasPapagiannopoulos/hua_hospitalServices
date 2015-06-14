@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'bootstrapform',
     'how'
 
+
 )
 
 MIDDLEWARE_CLASSES = (

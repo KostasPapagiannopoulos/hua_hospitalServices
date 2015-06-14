@@ -150,3 +150,23 @@ def all_appointments(request):
    return render(request, 'allappointments.html', context)
 
 
+
+@login_required(login_url='/pat/login/')
+@user_passes_test(user_in_patient_group, login_url='/pat/login/')
+def appointment_edit_by_user(request, appointmentID):
+    result = java_Appointment_Client.service.patientRequestExpeditionAppointment(appointmentID)
+    if not result:
+        return HttpResponse("Κάποιο πρόβλημα προέκυψε")
+    else:
+        return HttpResponseRedirect('/pat/appointment/all')
+
+
+@login_required(login_url='/pat/login/')
+@user_passes_test(user_in_patient_group, login_url='/pat/login/')
+def appointment_edit_by_user(request, appointmentID):
+    result = java_Appointment_Client.service.patientRequestExpeditionAppointment(appointmentID)
+    if not result:
+        return HttpResponse("Κάποιο πρόβλημα προέκυψε")
+    else:
+        return HttpResponseRedirect('/pat/appointment/all')
+

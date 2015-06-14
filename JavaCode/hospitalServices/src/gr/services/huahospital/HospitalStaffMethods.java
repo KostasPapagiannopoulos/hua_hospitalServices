@@ -16,8 +16,8 @@ public class HospitalStaffMethods extends BaseWebMethods {
 		try {
 
 			String SQLStr = "" + "" + "INSERT INTO `itp14105`.`hospitalstaff` "
-					+ "(firstName,lastName,gender,birthDate,staffType,emp_no)"
-					+ "" + "" + "VALUES ( ?, ?, ?,  ?, ?, ?);";
+					+ "(firstName,lastName,gender,birthDate,staffType,emp_no, specialty)"
+					+ "" + "" + "VALUES ( ?, ?, ?,  ?, ?, ?, ?);";
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
@@ -29,6 +29,9 @@ public class HospitalStaffMethods extends BaseWebMethods {
 					.getBirthDate().getTime()));
 			preparedStmnt.setInt(5, hospitalStaff.getStaffType());
 			preparedStmnt.setString(6, hospitalStaff.getEmp_no());
+			preparedStmnt.setString(7, hospitalStaff.getSpecialty());
+			
+
 
 			db.Update(preparedStmnt); // commit
 
@@ -67,6 +70,7 @@ public class HospitalStaffMethods extends BaseWebMethods {
 				staffInstance.setBirthDate(rs.getDate("birthDate"));
 				staffInstance.setStaffType(rs.getInt("staffType"));
 				staffInstance.setEmp_no(rs.getString("emp_no"));
+				staffInstance.setSpecialty(rs.getString("specialty"));
 
 				arrList.add(staffInstance);
 			}
@@ -99,6 +103,7 @@ public class HospitalStaffMethods extends BaseWebMethods {
 				staffInstance.setBirthDate(rs.getDate("birthDate"));
 				staffInstance.setStaffType(rs.getInt("staffType"));
 				staffInstance.setEmp_no(rs.getString("emp_no"));
+				staffInstance.setSpecialty(rs.getString("specialty"));
 
 				return staffInstance;
 			}
