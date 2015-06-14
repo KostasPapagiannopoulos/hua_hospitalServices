@@ -172,6 +172,10 @@ def user_in_director_group(user):
         return user.groups.filter(name='director').count() != 0
     return False
 
+def user_in_staff_or_doctor_or_director_group(user):
+    return user_in_doctor_group(user) or user_in_staff_group(user) or user_in_director_group(user)
+
+
 
 @login_required(login_url='/accounts/login/')
 @user_passes_test(user_in_staff_group, login_url='/accounts/login/')
@@ -194,7 +198,7 @@ def doctors(request):
 
 
 @login_required(login_url='/accounts/login/')
-@user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
+@user_passes_test(user_in_staff_or_doctor_or_director_group, login_url='/accounts/login/')
 def duty(request, doctorid):
     results = soap_client_ClinicServices.service.returnAllClinicDuty(doctorid)
     context = {'results': results, }

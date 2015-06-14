@@ -54,8 +54,8 @@ public class ClinicMethods extends BaseWebMethods {
 
 			String SQLStr = ""
 					+ "SELECT * "
-					+ "FROM itp14105.hospitalstaff "
-					+ "JOIN itp14105.clinicDoctor ON clinicDoctor.doctorid = hospitalstaff.emp_no "
+					+ "FROM itp14105.clinicDoctor "
+					+ "JOIN itp14105.hospitalstaff ON clinicDoctor.doctorid = hospitalstaff.emp_no "
 					+ "JOIN itp14105.clinics   ON clinicDoctor.clinicid = clinics.clinicid "
 					+ "WHERE itp14105.hospitalstaff.emp_no = ? " + ";";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
@@ -94,7 +94,7 @@ public class ClinicMethods extends BaseWebMethods {
 		try {
 			ArrayList<Doctor> arrList = new ArrayList<Doctor>();
 
-			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff`;";
+			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff` WHERE staffType = 3;";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 			ResultSet rs = db.Query(preparedStmnt);
 			while (rs.next()) {
