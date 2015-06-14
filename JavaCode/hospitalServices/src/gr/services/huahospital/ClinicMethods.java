@@ -127,8 +127,9 @@ public class ClinicMethods extends BaseWebMethods {
 		try {
 			ArrayList<DoctorAppointments> arrList = new ArrayList<DoctorAppointments>();
 
-			String SQLStr = "SELECT * FROM appointment "
-					+ "JOIN `clinicDoctor` ON clinicDoctor.`clinicid` = appointment.clinicid AND appointment.appointmentDate > clinicDoctor.`dateFrom` AND appointment.appointmentDate < clinicDoctor.`dateTo` "
+			String SQLStr = "SELECT * "
+					+ " FROM appointment "
+					+ "JOIN `clinicDoctor` ON clinicDoctor.`clinicid` = appointment.clinicid AND appointment.appointmentDate >= clinicDoctor.`dateFrom` AND appointment.appointmentDate <= clinicDoctor.`dateTo` "
 					+ "JOIN clinics ON clinicDoctor.`clinicid` = clinics.clinicid "
 					+ "WHERE doctorid = ?";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
@@ -149,6 +150,8 @@ public class ClinicMethods extends BaseWebMethods {
 				temp.setClinicId(rs.getInt("clinicId"));
 				temp.setClinicName(rs.getString("clinicName"));
 				temp.setClinicType(rs.getString("clinicType"));
+				temp.setAppointmentState(rs.getInt("appointmentState"));
+				
 				arrList.add(temp);
 			}
 			return arrList;

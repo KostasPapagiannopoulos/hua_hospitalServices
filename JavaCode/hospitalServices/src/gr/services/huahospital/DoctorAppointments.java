@@ -18,6 +18,7 @@ public class DoctorAppointments {
 	private Time appointmentTime;
 	private String strAppointmentTime;		
 	private int appointmentEmergency;
+	public int appointmentState;
 	private int clinicId;
 	private String clinicName;
 	private String clinicType;
@@ -109,5 +110,11 @@ public class DoctorAppointments {
 	}
 	public void setClinicType(String clinicType) {
 		this.clinicType = clinicType;
+	}
+	public int getAppointmentState() {
+		return appointmentState;
+	}
+	public void setAppointmentState(int appointmentState) {
+		this.appointmentState = appointmentState;
 	}
 }
