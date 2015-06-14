@@ -34,7 +34,6 @@
         <th class="">ID</th>
         <th class="">Κλινική</th>
         <th class="">Ονομ/μο</th>
-        <th class="">ΑΜΚΑ</th>
         <th class="">Πρόβλημα</th>
         <th class="">Ημ/νία</th>
         <th class="">Επείγον</th>
@@ -45,8 +44,8 @@
     <tr class="">
         <td class=""> {{result.appointmentID}}</td>
         <td class=""> {{result.clinicName}}</td>
-        <td class=""> {{result.patientName}} {{result.patientSurname}}</td>
-        <td class=""> {{result.AMKA}}</td>
+        <td class=""><a href="/hospital/patientHistory/{{result.AMKA}}"> {{result.patientName}}
+            {{result.patientSurname}}</a></td>
         <td class=""> {{result.diseaseDetails}}</td>
         <td class=""> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
         <td class=""> {{result.appointmentEmergency}}</td>

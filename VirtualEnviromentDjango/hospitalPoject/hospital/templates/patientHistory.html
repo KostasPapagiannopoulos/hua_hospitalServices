@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1> Ιστορικό ασθενούς </h1>
+
+<h2>
+    {{patient.patientName}}
+    {{patient.patientSurname}}
+    AMKA: {{patient.AMKA}}
+</h2>
+{% regroup history by problem as g_history %}
+<table class="table table-striped">
+
+
+    {% for g_result in g_history %}
+    <tr class="info">
+        <td colspan="3">
+            {{ g_result.grouper }}
+        </td>
+    <tr/>
+
+    {% for result in g_result.list %}
+    <tr class="">
+        <td class="" rowspan="4"> {{result.strAppointmentDate}} {{result.strAppointmentTime}}
+
+        </td>
+        <td><strong>S:</strong></td>
+        <td class=""> {{result.subjective}}</td>
+    </tr>
+    <tr class="">
+        <td><strong>O:</strong></td>
+        <td class=""> {{result.objective}}</td>
+    </tr>
+    <tr class="">
+        <td><strong>A:</strong></td>
+        <td class=""> {{result.assessment}}</td>
+    </tr>
+    <tr class="">
+        <td><strong>P:</strong></td>
+        <td class=""> {{result.plan}}</td>
+    </tr>
+    {% endfor %}
+
+    {% endfor %}
+
+</table>
+
+
+{% endblock %}

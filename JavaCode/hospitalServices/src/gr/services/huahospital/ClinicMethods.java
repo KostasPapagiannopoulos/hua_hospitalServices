@@ -54,10 +54,10 @@ public class ClinicMethods extends BaseWebMethods {
 
 			String SQLStr = ""
 					+ "SELECT * "
-					+ "FROM itp14105.doctors "
+					+ "FROM itp14105.hospitalstaff "
 					+ "JOIN itp14105.clinicDoctor ON clinicDoctor.doctorid = hospitalstaff.emp_no "
 					+ "JOIN itp14105.clinics   ON clinicDoctor.clinicid = clinics.clinicid "
-					+ "WHERE hospitalstaff.emp_no = ? " + ";";
+					+ "WHERE itp14105.hospitalstaff.emp_no = ? " + ";";
 			preparedStmnt = db.getConn().prepareStatement(SQLStr);
 			preparedStmnt.setString(1, String.valueOf(doctorid));
 
@@ -172,19 +172,19 @@ public class ClinicMethods extends BaseWebMethods {
 
 			String SQLStr = "INSERT INTO `itp14105`.`doctorAssessment`"
 					+ "(appointmentId, doctorId, problem, subjective, objective, assessment, plan)"
-					+ "VALUES ( ?, ?, ?, ?, ?, ?, ?, )  "
+					+ "VALUES ( ?, ?, ?, ?, ?, ?, ? )  "
 					;
 			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
 					SQLStr);
 
-			preparedStmnt.setInt(1, assessment.getAssessmentId());
-			preparedStmnt.setInt(2, assessment.getAppointmentId());
-			preparedStmnt.setInt(3, assessment.getDoctorId());
-			preparedStmnt.setString(4, assessment.getProblem());
-			preparedStmnt.setString(5, assessment.getSubjective());
-			preparedStmnt.setString(6, assessment.getObjective());
-			preparedStmnt.setString(7, assessment.getAssessment());
-			preparedStmnt.setString(8, assessment.getPlan());
+			
+			preparedStmnt.setInt(1, assessment.getAppointmentId());
+			preparedStmnt.setInt(2, assessment.getDoctorId());
+			preparedStmnt.setString(3, assessment.getProblem());
+			preparedStmnt.setString(4, assessment.getSubjective());
+			preparedStmnt.setString(5, assessment.getObjective());
+			preparedStmnt.setString(6, assessment.getAssessment());
+			preparedStmnt.setString(7, assessment.getPlan());
 			
 
 			db.Update(preparedStmnt); // commit
@@ -194,6 +194,50 @@ public class ClinicMethods extends BaseWebMethods {
 		}
 
 		return false;
+
+	}
+	
+	@WebMethod
+	public ArrayList<Assessment> getAssessmentsByPatientAMKA(int patientAMKA) {
+		try {
+
+			String SQLStr = "SELECT "
+					+ "doctorAssessment.*, appointment .appointmentDate, appointment .appointmentTime "
+					+ " FROM `doctorAssessment`"
+					+ " LEFT JOIN appointment ON appointment.`appointmentId` = doctorAssessment.appointmentId"
+					+ " WHERE AMKA = ?  "
+					;
+			PreparedStatement preparedStmnt = db.getConn().prepareStatement(
+					SQLStr);
+			
+			preparedStmnt.setInt(1, patientAMKA);
+
+			ArrayList<Assessment> arrList = new ArrayList<Assessment> ();
+			ResultSet rs = db.Query(preparedStmnt);
+			while (rs.next()) {
+				Assessment temp = new Assessment();
+
+				
+				temp.setAssessmentId(rs.getInt("assessmentId"));
+				temp.setAppointmentId(rs.getInt("appointmentId"));
+				temp.setDoctorId(rs.getInt("doctorId"));
+				temp.setProblem(rs.getString("problem"));
+				temp.setSubjective(rs.getString("subjective"));
+				temp.setObjective(rs.getString("objective"));
+				temp.setAssessment(rs.getString("assessment"));
+				temp.setPlan(rs.getString("plan"));
+				temp.setAppointmentDate(rs.getDate("appointmentDate"));				
+				temp.setAppointmentTime(rs.getTime("appointmentTime"));
+
+				arrList.add(temp);
+			}
+			return arrList;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
 
 	}
 

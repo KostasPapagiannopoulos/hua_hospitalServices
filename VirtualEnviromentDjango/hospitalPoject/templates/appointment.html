@@ -2,7 +2,12 @@
 {% load bootstrap %}
 {% block body_block %}
 
-<h1>Request Form </h1>
+<h1>Επεξεργασία Ραντεβού </h1>
+<h2>
+    {{patient.patientName}}
+    {{patient.patientSurname}}
+    AMKA: {{patient.AMKA}}
+</h2>
 
 <form role="form" action='{{action_url}}' method='post' class="form-horizontal">{% csrf_token %}
     {{ form|bootstrap_horizontal }}
