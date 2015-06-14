@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'intro', 
     'patient',
     'bootstrapform',
+    'how'
 
 )
 

@@ -1,10 +1,10 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 {% load bootstrap %}
 
 {% block content %}
 
 <form role="form" action="/accounts/register/" method="post">
-    <legend>Register</legend>
+    <legend>Εγγραφή για το προσωπικό του νοσοκομείου</legend>
     {% csrf_token %}
     {{ form|bootstrap }}
     <div class="form-group">

@@ -1,10 +1,10 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 {% block content %}
 
-  <h2>Hi {{full_name}} you are now logged in!</h2>
-  <p>Click <a href="/accounts/logout/">here</a> to logout.</p>
+  <h2>Γειά σας {{full_name}} συνδεθήκατε επιτυχώς!</h2>
+  <p>Πατήστε <a href="/accounts/logout/">εδώ </a> για αποσύνδεση.</p>
 
-  <p>Click <a href="/accounts/profile/">here</a> to edit your profile information</p>
+  <p>Πατήστε <a href="/accounts/profile/">εδώ <span class="glyphicon glyphicon-pencil"></span></a> για να επεξεργαστείτε τα προσωπικά σας στοιχεία</p>
 
 {% endblock %}

@@ -1,0 +1,10 @@
+﻿{% extends "base.html" %}
+{% block content %}
+{% for how in object_list %}
+<h2>{{ how.title }}</h2>
+<div class="how_body">
+{{ how.body|safe|linebreaks }}
+</div>
+
+ {% endfor %}
+{% endblock %}
