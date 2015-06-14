@@ -127,4 +127,50 @@ public class HospitalStaffMethods extends BaseWebMethods {
 
 	}
 
+	@WebMethod
+	public HospitalStaff returnStaffByEmpNo(String emp_no) {
+		PreparedStatement preparedStmnt = null;
+		try {
+
+			String SQLStr = "SELECT * FROM `itp14105`.`hospitalstaff` where emp_no = ?;";
+
+			preparedStmnt = db.getConn().prepareStatement(SQLStr);
+
+			preparedStmnt.setString(1, emp_no);
+			// Excecute the query
+			ResultSet rs = db.Query(preparedStmnt);
+			// we get only one
+			if (rs.next()) {
+				HospitalStaff staffInstance = new HospitalStaff();
+				staffInstance.setStaffID(rs.getInt("staffID"));
+				staffInstance.setFirstName(rs.getString("firstName"));
+				staffInstance.setLastSurname(rs.getString("lastName"));
+				staffInstance.setGender(rs.getString("gender").charAt(0));
+				staffInstance.setBirthDate(rs.getDate("birthDate"));
+				staffInstance.setStaffType(rs.getInt("staffType"));
+				staffInstance.setEmp_no(rs.getString("emp_no"));
+				staffInstance.setSpecialty(rs.getString("specialty"));
+
+				return staffInstance;
+			}
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		} finally {
+			try {
+				if (preparedStmnt != null) {
+					preparedStmnt.close();
+				}
+			} catch (final SQLException sqlEx) {
+				sqlEx.printStackTrace();
+			}
+
+		}
+		// we didnt find anyone with this Staff id
+		return null;
+
+	}
+	
 }

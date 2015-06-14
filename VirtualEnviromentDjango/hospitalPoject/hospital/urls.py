@@ -22,6 +22,8 @@ urlpatterns = patterns('',
         url(r'^surgeryDetails', views.surgeryDetails,),
         url(r'^cardiologyDetails', views.cardiologyDetails,),
         url(r'^contactDetails', views.contactDetails,),
+        url(r'^patientHistory/(?P<amka>[0-9]+)', views.patientHistory,),
+
 
 
 

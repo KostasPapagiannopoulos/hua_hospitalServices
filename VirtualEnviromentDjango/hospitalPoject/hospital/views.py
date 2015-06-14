@@ -12,7 +12,7 @@ from forms import MyRegistrationForm, EditAppointmentForm, EditAppointmentForm_b
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib import auth
 
-java_Patient_Clinet = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
+java_Patient_Client = Client('http://localhost:8080/hospitalServices/PatientMethodsService?WSDL')
 java_Staff_Client = Client('http://localhost:8080/hospitalServices/HospitalStaffMethodsService?WSDL')
 soap_client_ClinicServices = Client('http://localhost:8080/hospitalServices/ClinicMethodsService?WSDL')
 java_Appointment_Client = Client('http://localhost:8080/hospitalServices/AppointmentMethodsService?WSDL')
@@ -122,7 +122,7 @@ def register_user(request):
 
 
 def java_insertUser(form):
-    patient = java_Patient_Clinet.factory.create('patient')
+    patient = java_Patient_Client.factory.create('patient')
     patient.patientName = form.cleaned_data['first_name']
     patient.patientSurname = form.cleaned_data['last_name']
     patient.patientGender = form.cleaned_data['gender']
@@ -132,7 +132,7 @@ def java_insertUser(form):
     patient.address = 'address'
     patient.country = 'country'
     patient.email = form.cleaned_data['email']
-    return java_Patient_Clinet.service.insertPatient(patient) != "Error"
+    return java_Patient_Client.service.insertPatient(patient) != "Error"
 
 
 def java_insertStaff(form):
@@ -226,7 +226,7 @@ def appointments(request, doctorid):
 def home_doctor(request):
     appointments = soap_client_ClinicServices.service.returnDoctorAppointments(request.user.username)
     duty = soap_client_ClinicServices.service.returnAllClinicDuty(request.user.username)
-    doctor = java_Staff_Client.service.returnStaffByStaffId(request.user.username)
+    doctor = java_Staff_Client.service.returnStaffByEmpNo(request.user.username)
     context = {'appointments': appointments, 'duty': duty, 'doctor': doctor}
     return render(request, 'doctor_home.html', context)
 
@@ -237,6 +237,16 @@ def pendingappointments(request):
     appointments = java_Appointment_Client.service.returnAllAppointments()
     context = {'appointments': appointments}
     return render(request, 'pendingappointments.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+@user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
+def patientHistory(request, amka):
+    history = soap_client_ClinicServices.service.getAssessmentsByPatientAMKA(amka)
+    currentPatient  = java_Patient_Client.service.returnPatientByAMKA(amka, None)
+
+    context = {'history': history, 'patient': currentPatient}
+    return render(request, 'patientHistory.html', context)
 
 
 @login_required(login_url='/accounts/login/')
@@ -355,6 +365,7 @@ def appointment_edit_by_director_expedition(request, appointmentID):
 @user_passes_test(user_in_doctor_group, login_url='/accounts/login/')
 def doctor_edit_app(request, appointmentID):
     currentAppointment = java_Appointment_Client.service.returnAppointmentById(appointmentID)
+    currentPatient  = java_Patient_Client.service.returnPatientByAMKA(currentAppointment.AMKA, None)
 
     if currentAppointment is None:
         return HttpResponse("Appointment Not Found!")
@@ -363,12 +374,12 @@ def doctor_edit_app(request, appointmentID):
     else:
         print soap_client_ClinicServices
         assessment = soap_client_ClinicServices.factory.create('assessment')
-        doctor = java_Staff_Client.service.returnStaffByStaffId(request.user.username)
+        doctor = java_Staff_Client.service.returnStaffByEmpNo(request.user.username)
 
         form = DoctorEditApp(request.POST, appointment=currentAppointment)
         if form.is_valid():
             assessment.appointmentId = currentAppointment.appointmentID
-            assessment.doctorId = doctor.doctorid
+            assessment.doctorId = doctor.emp_no
             assessment.problem = form.cleaned_data['problem']
             assessment.subjective = form.cleaned_data['subjective']
             assessment.objective = form.cleaned_data['objective']
@@ -377,8 +388,8 @@ def doctor_edit_app(request, appointmentID):
 
             result = soap_client_ClinicServices.service.doctorInsertAppointment(assessment)
             if result:
-                return HttpResponseRedirect('/hospital/pendingappointments_director')
+                return HttpResponseRedirect('/hospital/home_doctor')
             else:
                 return HttpResponse("Appointment Not Updated")
     return render(request, 'appointment.html',
-                  {'form': form, 'action_url': '/hospital/doctor_edit_app/' + appointmentID})
+                  {'form': form, 'patient': currentPatient, 'action_url': '/hospital/doctor_edit_app/' + appointmentID})

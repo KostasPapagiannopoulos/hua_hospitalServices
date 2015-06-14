@@ -30,15 +30,15 @@ BLOOD_TYPE_CHOICES = (
 
 
 class PatientnForm(UserCreationForm):
-    email = forms.EmailField(required=True)
-    amka = forms.IntegerField(required=True)
-    patientName = forms.CharField(required=True)
-    patientSurname = forms.CharField(required=True)
-    patientGender = forms.ChoiceField(required=True, choices=GENDER_CHOICES)
-    insuranceFund = forms.CharField(required=True)
-    bloodType = forms.ChoiceField(required=True, choices=BLOOD_TYPE_CHOICES)
-    address = forms.CharField(required=True)
-    country = forms.CharField(required=True)
+    email = forms.EmailField(label='Email',required=True)
+    amka = forms.IntegerField(label='ΑΜΚΑ',required=True)
+    patientName = forms.CharField(label='Όνομα',required=True)
+    patientSurname = forms.CharField(label='Επώνυμο',required=True)
+    patientGender = forms.ChoiceField(label='Φύλο',required=True, choices=GENDER_CHOICES)
+    insuranceFund = forms.CharField(label='Ασφάλιστικός φορέας',required=True)
+    bloodType = forms.ChoiceField(label='Ομάδα Αίματος',required=True, choices=BLOOD_TYPE_CHOICES)
+    address = forms.CharField(label='Διεύθυνση',required=True)
+    country = forms.CharField(label='Χώρα',required=True)
 
     class Meta:
         model = User
