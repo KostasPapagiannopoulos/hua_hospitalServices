@@ -6,7 +6,7 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'hospitalPoject.views.home'),
+    url(r'^$', include('intro.urls')),
     url(r'^intro/', include('intro.urls')),
      url(r'^how/', include('how.urls')),                    
     # url(r'^blog/', include('blog.urls')),
