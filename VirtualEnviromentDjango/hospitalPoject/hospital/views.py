@@ -34,6 +34,18 @@ def showusers(request):
     data = json.load(result)
     return HttpResponse(data)
 
+def psychiatricDetails(request):
+    return render(request, 'psychiatricDetails.html')
+
+def surgeryDetails(request):
+    return render(request, 'surgeryDetails.html')
+
+def cardiologyDetails(request):
+    return render(request, 'cardiologyDetails.html')
+
+def contactDetails(request):
+    return render(request, 'contactDetails.html')
+
 
 def userExists(emp_no):
     # Get the data from the endpoint
