@@ -9,7 +9,7 @@
     {{patient.patientSurname}}
     AMKA: {{patient.AMKA}}
 </h2>
-{% regroup history by problem as g_history %}
+{% regroup history|dictsort:"problem" by problem as g_history %}
 <table class="table table-striped">
 
 
@@ -20,7 +20,7 @@
         </td>
     <tr/>
 
-    {% for result in g_result.list %}
+    {% for result in g_result.list|dictsortreversed:"appointmentId" %}
     <tr class="">
         <td class="" rowspan="4"> {{result.strAppointmentDate}} {{result.strAppointmentTime}}
 

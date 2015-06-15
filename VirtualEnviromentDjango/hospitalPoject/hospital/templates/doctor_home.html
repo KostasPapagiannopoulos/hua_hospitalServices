@@ -41,6 +41,7 @@
 
     </tr>
     {% for result in appointments %}
+    {% if result.appointmentState < 100 and result.appointmentState > 1 %}
     <tr class="">
         <td class=""> {{result.appointmentID}}</td>
         <td class=""> {{result.clinicName}}</td>
@@ -52,14 +53,15 @@
 
 
         <td class="">
-            {% if result.appointmentState < 100 %}
-            {{result.appointmentState}}
+            {% if result.appointmentState < 100 and result.appointmentState > 1 %}
+
             <a href="/hospital/doctor_edit_app/{{result.appointmentID}}">Επεξεργασία</a>
 
             {% endif %}
         </td>
 
     <tr/>
+    {% endif %}
     {% endfor %}
 </table>
 {% endblock %}
