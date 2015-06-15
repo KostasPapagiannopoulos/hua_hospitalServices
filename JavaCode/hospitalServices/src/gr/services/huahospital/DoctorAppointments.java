@@ -18,7 +18,7 @@ public class DoctorAppointments {
 	private Time appointmentTime;
 	private String strAppointmentTime;		
 	private int appointmentEmergency;
-	public int appointmentState;
+	private int appointmentState;
 	private int clinicId;
 	private String clinicName;
 	private String clinicType;
