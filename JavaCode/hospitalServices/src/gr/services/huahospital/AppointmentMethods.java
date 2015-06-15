@@ -74,6 +74,7 @@ public class AppointmentMethods extends BaseWebMethods {
 			
 			preparedStmnt.setInt(7, appointment.getAppointmentID());
 			
+			
 
 			db.Update(preparedStmnt); // commit
 			return "Το ραντεβού σας ενημερώθηκε επιτυχώς!";

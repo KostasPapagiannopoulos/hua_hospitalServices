@@ -49,7 +49,16 @@
         <td class=""> {{result.diseaseDetails}}</td>
         <td class=""> {{result.strAppointmentDate}} {{result.strAppointmentTime}}</td>
         <td class=""> {{result.appointmentEmergency}}</td>
-        <td class=""><a href="/hospital/doctor_edit_app/{{result.appointmentID}}">Επεξεργασία</a></td>
+
+
+        <td class="">
+            {% if result.appointmentState < 100 %}
+            {{result.appointmentState}}
+            <a href="/hospital/doctor_edit_app/{{result.appointmentID}}">Επεξεργασία</a>
+
+            {% endif %}
+        </td>
+
     <tr/>
     {% endfor %}
 </table>
