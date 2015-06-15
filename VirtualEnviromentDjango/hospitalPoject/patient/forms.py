@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from datetime import datetime, timedelta
 from django.utils.dateformat import DateFormat
 from suds.client import Client
-import re
+
 
 GENDER_CHOICES = (
     ('', ''),

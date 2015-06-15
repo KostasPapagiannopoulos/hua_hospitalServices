@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% for Meeting in object_list %}
+<h3>{{Meeting.title}}</h3>
+<div class="meeting_body">
+{{Meeting.body|safe|linebreaks}}
+</div>
+
+{% endfor %}
+{%endblock %}
